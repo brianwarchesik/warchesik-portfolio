@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="370px" height="3px" viewBox="0 0 370 3" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>flare_left</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#A37906" stop-opacity="0.15" offset="0%"></stop>
+            <stop stop-color="#D8A621" stop-opacity="0.480803507" offset="9.64949234%"></stop>
+            <stop stop-color="#FFF2D3" offset="31.4517102%"></stop>
+            <stop stop-color="#D99F22" stop-opacity="0.485103489" offset="74.2277818%"></stop>
+            <stop stop-color="#BA8B25" stop-opacity="0.15" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Homepages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-BW-Homepage" transform="translate(-120.000000, -903.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+            <g id="landing_unit" transform="translate(-955.000000, -798.000000)">
+                <g id="Featured-Projects" transform="translate(1075.000000, 1676.000000)">
+                    <rect id="flare_left" x="0" y="25" width="370" height="3"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

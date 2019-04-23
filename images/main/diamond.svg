@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Rectangle 6 Copy 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="129.00097%" y1="53.4151332%" x2="-46.5018654%" y2="94.0448131%" id="linearGradient-1">
+            <stop stop-color="#8182AB" offset="0%"></stop>
+            <stop stop-color="#4C4C4C" offset="37.0530141%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="137.801578%" y1="39.1380164%" x2="-31.3547384%" y2="50%" id="linearGradient-2">
+            <stop stop-color="#5E667A" offset="0%"></stop>
+            <stop stop-color="#B0A896" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-3" x="1653.52402" y="1555.52402" width="41.1575939" height="41.1575939" rx="4"></rect>
+        <filter x="-7.3%" y="-7.3%" width="114.6%" height="114.6%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="-2" dy="-1" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Homepages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-BW-Homepage" transform="translate(-689.000000, -748.000000)" fill-rule="nonzero">
+            <g id="landing_unit" transform="translate(-955.000000, -798.000000)">
+                <g id="Rectangle-6-Copy-2" transform="translate(1674.102814, 1576.102814) rotate(-315.000000) translate(-1674.102814, -1576.102814) ">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                    <rect stroke="url(#linearGradient-1)" stroke-width="2" x="1652.52402" y="1554.52402" width="43.1575939" height="43.1575939" rx="4"></rect>
+                    <use stroke="url(#linearGradient-2)" stroke-width="2" xlink:href="#path-3"></use>
+                    <use stroke="#979797" stroke-width="1" xlink:href="#path-3"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

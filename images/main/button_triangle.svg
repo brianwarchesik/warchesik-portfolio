@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="16px" viewBox="0 0 13 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>button_triangle</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Buttons-/-CTA-/-State-/-Normal" transform="translate(-186.000000, -17.000000)" fill="#D8BF89" fill-rule="nonzero">
+            <g id="CTA">
+                <g id="Group" transform="translate(80.000000, 11.000000)">
+                    <path d="M110.311294,19.8257677 L104.460686,11.1151366 C103.844813,10.1981991 104.088874,8.95561078 105.005811,8.33973785 C105.33554,8.11827096 105.723746,8 106.120948,8 L117.822164,8 C118.926734,8 119.822164,8.8954305 119.822164,10 C119.822164,10.3972014 119.703893,10.7854074 119.482426,11.1151366 L113.631818,19.8257677 C113.015945,20.7427051 111.773357,20.9867662 110.856419,20.3708932 C110.641078,20.2262565 110.455931,20.041109 110.311294,19.8257677 Z" id="button_triangle" transform="translate(111.971402, 13.959367) rotate(-90.000000) translate(-111.971402, -13.959367) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
