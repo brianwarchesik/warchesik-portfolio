@@ -4,14 +4,15 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Portfolio | Brian Warchesik</title>
-        <!-- <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet"> -->
-        <!-- <link rel="stylesheet" href="styles/reset.css"> -->
-        <!-- <link rel="stylesheet" href="styles/main.css"> -->
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+        <link rel="stylesheet" href="styles/reset.css">
+        <link rel="stylesheet" href="styles/main.css">
     </head>
+    
     <body>
-        <nav>
-            <ul>
-                <li><a href="index.html" title="Home"><img src="images/main/bw_logo_reversed.svg" alt="bw logo reversed"> Brian Warchesik</a></li>
+        <nav id="mainNav" class="site-nav">
+            <ul class="list-only">
+                <li><a href="index.html" title="Home" class="container-flex"><img src="images/main/bw_logo_reversed.svg" alt="bw logo reversed">Brian&nbsp;Warchesik</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="https://drive.google.com/file/d/1kdeu2df695l5dtgCmRaH4XNe94WC2E88/view?usp=sharing" target="_blank">Resume</a></li>
                 <li><a href="comtact.html">Contact</a></li>
@@ -23,7 +24,7 @@
                 <header>
                     <img src="images/main/bw_main_logo.png" alt="bw main logo">
                     <h1>Brian Warchesik</h1>
-                    <h3>I’m a User Experience Designer in the greater Denver area that loves to code.</h3>
+                    <h3>I’m a User Experience Designer in the greater  Denver area that loves to code.</h3>
                 </header>
                 <p>Thanks for checking out my work. Feel free to contact me me at <a href="https://www.linkedin.com/in/brianwarchesik/" target="_blank" title="LinkedIn">LinkedIn</a>, download my <a href="https://drive.google.com/file/d/1kdeu2df695l5dtgCmRaH4XNe94WC2E88/view?usp=sharing" target="_blank">resume</a>, or set up a <a href="contact.html" title="Contact Form">meeting</a> through email.</p>
                 <!-- Image below might be better served as a backgound image in CSS  -->
@@ -51,19 +52,22 @@
                 </header>
                 <p>SOZO is an advanced cloud storage application that has the ability to sync to other cloud storage platforms. SOZO lets users securely store, create &amp; share files in an environment tailored by them.</p>
                 <!-- CTA Button -->
-                <a href="sozo_case_study.html">Case Study <img src="images/main/button_triangle.svg" alt="triangle"></a>
+                <div class= "cta-button">
+                    <a href="sozo_case_study.html">Case Study<img src="images/main/button_triangle.svg" alt="triangle"></a>
+                </div>
             </section>
         </main>
 
-        <footer>
-            <ul>
+        <footer class="main-footer">
+            <h6>Get In Touch</h6>
+            <p>&copy;2019 Designed and Developed by Brian Warchesik</p>
+            <ul class="list-only">
                 <li><a href="index.html" title="Home"><img src="images/main/bw_logo_reversed.svg" alt="bw logo reversed"></a></li>
-                <li><a href="https://drive.google.com/file/d/1kdeu2df695l5dtgCmRaH4XNe94WC2E88/view?usp=sharing" target="_blank">Resume</a></li>
-                <li><h6>Get In Touch</h6></li>
-                <li><p>&copy;2019 Designed and Developed by Brian Warchesik</p></li>
+                <!-- <li><a href="https://drive.google.com/file/d/1kdeu2df695l5dtgCmRaH4XNe94WC2E88/view?usp=sharing" target="_blank">Resume</a></li> -->
                 <li><a href="contact.html" title="Contact Form"><img src="images/main/email.svg" alt="email contact"></a></li>
                 <li><a href="https://www.linkedin.com/in/brianwarchesik/" target="_blank" title="LinkedIn"><img src="images/main/linked_in.svg" alt="linked in"></a></li>
             </ul>
         </footer>
+
     </body>
 </html>

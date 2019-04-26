@@ -3,3 +3,238 @@
 * {
     box-sizing: border-box;
 }
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin-left: 1.5rem;
+}
+
+li {
+    color: #151419;
+    font-size: 1.6rem;
+    margin-top: 2rem;
+    padding-left: 2rem;
+    line-height: 1.3;
+    list-style-image: url(../images/main/bullet_regular.svg);
+}
+
+/*---------------- Global Nav -------------------*/
+
+.site-nav {
+    background-color: rgba(51, 50, 53, 0.9);
+    padding: 1rem;
+}
+
+.site-nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100rem;
+    margin: 0 auto;
+}
+
+.site-nav a {
+    color: #E1E1E3;
+    font-size: 1.7rem;
+    padding: 0 1rem;
+    display: flex;
+
+}
+
+.site-nav img {
+    /* display: block; */
+    height: 2.4rem;
+    margin-right: 1.3rem;
+    margin-top: .2rem;
+    /* margin: auto; */
+}
+
+/*---------------- Global footer -------------------*/
+
+.main-footer {
+    background-image: radial-gradient(20% 100%, #52555D 20%, #1C1813 200%);
+    padding: 2rem;
+}
+
+.main-footer ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100rem;
+    margin: 0 auto;
+}
+
+.main-footer li a {
+    padding: 1rem 2.5rem;
+
+}
+
+.main-footer h6 {
+    font-weight: 900;
+    font-size: 2.9rem;
+    color: #E0E3E8;
+}
+
+.main-footer p {
+    color: #E0E3E8;
+    font-size: 1.3rem;
+    margin: .75rem 0 1rem 0;
+}
+
+.main-footer img[alt="bw logo reversed"] {
+    height: 25px;
+}
+
+/* .main-footer li:first-of-type {
+    display: none;
+} */
+
+
+.container-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*---------------- Global lists & Buttons -------------------*/
+
+.list-only {
+    margin: 0;
+}
+
+.list-only li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.cta-button {
+    background: #333236;
+    border: 5px solid #998D7D;
+    border-radius: .4rem;
+    outline: 3px solid #D8BF89;
+    outline-offset: -8px;
+    margin: 3.4rem auto;
+    width: 27.7rem;
+}
+
+.cta-button img {
+    margin-top: .15rem;
+    margin-left: 1rem;
+}
+
+.cta-button a {
+    align-items: center;
+    color: #D7DFEC;
+    display: flex;
+    font-size: 1.8rem;
+    font-weight: 700;
+    justify-content: center;
+    padding: .85rem 0 1rem 0;
+    width: 100%;
+}
+
+
+/*---------------- Global Typography -------------------*/
+
+strong {
+    font-weight: 900;
+}
+
+
+
+h2 {
+    color: #151419;
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 3.2rem;
+    padding-bottom: 1rem;
+}
+
+h4 {
+    color: #5E667A;
+    font-size: 2rem;
+}
+
+p {
+    color: #424651;
+    font-size: 1.8rem;
+    line-height: 1.3;
+    margin-top: 2rem;
+}
+
+footer h6 {
+    color: #E0E3E8;
+    font-size: 2.9rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.bullets-regular {
+
+}
+
+.section-header {
+    border-bottom: .2rem solid #BEAE99;
+    color: #6A6E78;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: .3rem;
+    margin-bottom: 3.5rem;
+    padding-bottom: .7rem;
+    text-transform: uppercase;
+}
+
+.light {
+    font-weight: 300;
+}
+
+.bold {
+    font-weight: 900;
+}
+
+.p-secondary {
+    border-left: .4rem solid #80889C;
+    color: #80889C;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 2rem;
+    padding-left: 1.3rem;
+}
+
+.roles {
+    color: #998D7D;
+    font-size: 13px;
+}
+
+.magenta {
+    color: #ed008b;
+    font-weight: 700;
+}
+
+.green {
+    color: #5fa67e;
+}
+
+.captions {
+    font-size: 1.6rem;
+}
+
+/*---------------- Landing Page Typography -------------------*/
