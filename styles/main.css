@@ -6,6 +6,7 @@
 
 html {
     font-size: 10px;
+    /* scroll-behavior: smooth; */
 }
 
 body {
@@ -13,43 +14,86 @@ body {
 }
 
 a {
+    font-weight: 700;
     text-decoration: none;
 }
 
 ul {
-    margin-left: 1.5rem;
+    margin-left: 2rem;
 }
 
 li {
     color: #151419;
     font-size: 1.6rem;
-    margin-top: 2rem;
-    padding-left: 2rem;
     line-height: 1.3;
     list-style-image: url(../images/main/bullet_regular.svg);
+    margin-top: 2rem;
+    padding-left: 1.5rem;
+}
+
+li p {
+    margin-top: 1rem;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    /* width: 100%; */
+    max-width: 100%;
+}
+
+section {
+    background-image: linear-gradient(179deg, #FAF9F7 0%, #EDEDF0 100%);
+    padding: 5rem 0 5rem 0;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 3% 1fr 3%;
+}
+
+.grid-inset {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    overflow: hidden;
+}
+
+.grid-inset-full {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.grid-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
 }
 
 /*---------------- Global Nav -------------------*/
 
 .site-nav {
     background-color: rgba(51, 50, 53, 0.9);
-    padding: 1rem;
+    padding: 1rem 0;
 }
 
 .site-nav ul {
+    align-items: center;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    max-width: 100rem;
     margin: 0 auto;
+    max-width: 100rem;
 }
 
 .site-nav a {
     color: #E1E1E3;
-    font-size: 1.7rem;
-    padding: 0 1rem;
     display: flex;
+    font-size: calc(1rem + .5vw);
+    padding: 0 1rem;
+    transition: all .2s ease-in-out;
+}
 
+.site-nav a:hover, .site-nav a:active{
+    color: rgb(176, 201, 246);
 }
 
 .site-nav img {
@@ -60,30 +104,32 @@ li {
     /* margin: auto; */
 }
 
-/*---------------- Global footer -------------------*/
+
+
+/*---------------- Footer -------------------*/
 
 .main-footer {
-    background-image: radial-gradient(20% 100%, #52555D 20%, #1C1813 200%);
+    background: radial-gradient(20% 100%, #52555D 20%, #1C1813 200%);
     padding: 2rem;
 }
 
 .main-footer ul {
+    align-items: center;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    margin: 2rem auto 0 auto;
     max-width: 100rem;
-    margin: 0 auto;
 }
 
-.main-footer li a {
-    padding: 1rem 2.5rem;
+/* .main-footer li a {
+    padding: 1rem 2.5rem; */
 
 }
 
 .main-footer h6 {
+    color: #E0E3E8;
     font-weight: 900;
     font-size: 2.9rem;
-    color: #E0E3E8;
 }
 
 .main-footer p {
@@ -102,22 +148,22 @@ li {
 
 
 .container-flex {
+    align-items: center;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 
-/*---------------- Global lists & Buttons -------------------*/
+/*---------------- Lists & Buttons -------------------*/
 
 .list-only {
     margin: 0;
 }
 
 .list-only li {
+    list-style: none;
     margin: 0;
     padding: 0;
-    list-style: none;
 }
 
 .cta-button {
@@ -126,13 +172,15 @@ li {
     border-radius: .4rem;
     outline: 3px solid #D8BF89;
     outline-offset: -8px;
-    margin: 3.4rem auto;
+    margin: 3.4rem auto 0 auto;
+    transition: all .3s ease-in-out;
     width: 27.7rem;
 }
 
 .cta-button img {
+    display: inline;
     margin-top: .15rem;
-    margin-left: 1rem;
+    margin: 0 0 0 1rem;
 }
 
 .cta-button a {
@@ -146,6 +194,20 @@ li {
     width: 100%;
 }
 
+.cta-button:hover, .cta-button:active {
+    background: radial-gradient(20% 100%, #52555D 20%, #1C1813 200%), #D8BF89;
+    border: 5px solid #D8BF89;
+    outline: 6px solid #998D7D;
+}
+
+
+.back-to-top p {
+    text-align: center;
+    margin: 0;
+}
+.back-to-top img {
+    width: 6rem;
+}
 
 /*---------------- Global Typography -------------------*/
 
@@ -157,7 +219,7 @@ strong {
 
 h2 {
     color: #151419;
-    font-size: 2.6rem;
+    font-size: 2.8rem;
     font-weight: 700;
     line-height: 3.2rem;
     padding-bottom: 1rem;
@@ -187,9 +249,6 @@ footer p {
     text-align: center;
 }
 
-.bullets-regular {
-
-}
 
 .section-header {
     border-bottom: .2rem solid #BEAE99;
@@ -197,7 +256,6 @@ footer p {
     font-size: 2rem;
     font-weight: 400;
     letter-spacing: .3rem;
-    margin-bottom: 3.5rem;
     padding-bottom: .7rem;
     text-transform: uppercase;
 }
@@ -221,7 +279,8 @@ footer p {
 
 .roles {
     color: #998D7D;
-    font-size: 13px;
+    font-size: 1.6rem;
+    text-transform: uppercase;
 }
 
 .magenta {
@@ -234,7 +293,422 @@ footer p {
 }
 
 .captions {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+    margin-top: 1rem;
 }
 
-/*---------------- Landing Page Typography -------------------*/
+.headings-reverse {
+    color: #F5F0EA;
+}
+
+.p-reverse {
+    color: #E1E1E3;
+}
+
+.roles-reverse {
+    color: #B6B7BB;
+}
+
+.list-reverse li {
+    color: #E1E1E3;
+}
+
+
+
+
+/*---------------- Verticle -------------------*/
+.main-section {
+    padding: 5rem 0 2.5rem 0;
+    background-image: linear-gradient(179deg, #FAF9F7 0%, #EDEDF0 100%);
+}
+
+
+.section-header + section {
+    padding-top: 2rem;
+}
+
+.no-color {
+    background: none;
+}
+
+.no-bullets ul li{
+    list-style: none;
+    padding: 0;
+}
+
+.no-bullets ul {
+    margin-left: 0;
+}
+
+
+.callout-block-botom li {
+    padding: rem;
+    margin: 0
+}
+
+.callout-block-bottom {
+    /* margin-top: -3rem; */
+    background: #DCDCDE;
+    border-radius: .4rem;
+    padding: 1rem 1rem 5rem 1rem;
+}
+
+.callout-block-bottom h6,
+.callout-block-bottom p,
+.callout-block-bottom li {
+    font-size: 2rem;
+}
+
+.callout-block-bottom h6 {
+    font-weight: 900;
+}
+
+.callout-block-top {
+    background: #181C27;
+    border-radius: .4rem .4rem 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 2rem 3rem 2rem;
+    position: relative;
+    width: 100%;
+    margin-top: 5rem;
+}
+
+ .callout-block-top:after {
+    background: linear-gradient(-90deg, rgba(17,14,11,.8) 0%, rgba(216,166,33,.7) 20%, #FFF2D3 50%, rgba(217,159,34,.7) 82%, rgba(17,14,11,.8) 100%);
+    bottom: 1rem;
+    content: "div";
+    height: .5rem;
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+
+.callout-block-top img {
+    margin: 0;
+    height: 4.5rem;
+    width: auto;
+}
+
+.callout-block-top h4 {
+    color: #F5F0EA;
+    font-size: 2.8rem;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+
+/*---------------- Landing Page Layout & Typography -------------------*/
+
+.landing {
+    background: url(../images/main/design_graphic.svg)right 0 bottom 10rem no-repeat, linear-gradient(144deg, #63666E 15%, #110E0B 100%);
+    background-size: contain;
+
+    border-bottom: .2rem solid rgba(217,159,34,1);
+    border-image-source: linear-gradient(-90deg, rgba(17,14,11,.8) 0%, rgba(216,166,33,.7) 20%, #FFF2D3 50%, rgba(217,159,34,.7) 82%, rgba(17,14,11,.8) 100%);
+    border-image-slice: 1;
+    padding-left: 0;
+    padding-right: 0;
+    /* height: 100vh; */
+}
+
+.landing a{
+    color: #D8BF89;
+    transition: all .2s ease-in-out;
+}
+
+.landing a:hover {
+    color: rgb(176, 201, 246);
+}
+
+.landing h3 {
+    color: #D7DFEC;
+    font-size: 2.4rem;
+    font-weight: 300;
+    line-height: 3rem;
+    text-align: center;
+    max-width: 90%;
+    margin: 0 auto 5rem auto;
+}
+
+.landing p {
+    margin: 0 auto;
+    font-size: 1.7rem;
+    color: #E0E3E8;
+    line-height: 2.2rem;
+    text-align: center;
+    max-width: 85%;
+}
+
+
+.name-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.landing h1 {
+    /* display: flex; */
+    /* justify-content: center; */
+    font-size: 3.4rem;
+    color: #FFFAEE;
+    letter-spacing: 1.578rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 auto 2rem auto;
+}
+
+.firstName {
+    color: #F1E2C3;
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 900;
+    letter-spacing: .351rem;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.landing h4 {
+    color: #BEAE99;
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: .37rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+img[alt="bw main logo"] {
+    max-width: 30%;
+    margin: 0 auto;
+}
+
+img[alt="diamond"] {
+    margin: 6rem auto 0 auto;
+    width: 3rem;
+}
+
+
+img[alt="down triangle"] {
+    margin: 6rem auto 0 auto;
+    width: 5rem;
+}
+
+img[alt="flare left"], [alt="flare right"] {
+    display: none;
+}
+
+
+/*---------------- Project Section Layout & Typography -------------------*/
+.project-one {
+    background: url(../images/sozo_images/sozo_hero_image.jpg) no-repeat, linear-gradient(-63deg, #F5F1EB 0%, #EDEDF2 95%) ;
+    padding: 5rem 0 5rem 0;
+    background-size: contain;
+    padding-top: 10%;
+}
+
+
+.project .roles {
+    border-bottom: .2rem solid #BEAE99;
+    margin: 1.6rem 0 1rem 0;
+    padding-bottom: 1rem;
+}
+
+/*---------------- Case Study Intro Layout & Typography -------------------*/
+#summary {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .5) 2%, rgba(0, 0, 0, 0) 6%), url(../images/sozo_images/sozo_hero_image.jpg) no-repeat, linear-gradient(144deg, #63666E 15%, #110E0B 100%);
+    background-size: contain;
+    padding-top: 5%;
+}
+
+.intro img[alt="SOZO logo"] {
+    max-width: 40%;
+    margin: 0 auto 2rem auto;
+}
+
+.intro h1 {
+    border-bottom: .2rem solid rgba(217,159,34,1);
+    border-image-source: linear-gradient(-90deg, rgba(17,14,11,0) 0%, rgba(216,166,33,.7) 20%, #FFF2D3 50%, rgba(217,159,34,.72) 82%, rgba(17,14,11,0) 100%);
+    border-image-slice: 1;
+    margin-bottom: 2rem;
+    margin-top: 1.4rem;
+}
+
+.design-roles {
+    background-color: #6A6E78;
+    border-radius: .4rem;
+    margin: 8rem auto;
+    max-width: 85%;
+    padding: 1rem 10% 4rem 10%;
+    text-align: center;
+}
+
+.design-roles h4{
+    color: #E1E1E3;
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin: 2rem 0 1rem 0;
+    padding-bottom: 1rem;
+    border-bottom: .5rem solid #ABADB1;
+
+}
+/*---------------- Case Study Page -------------------*/
+
+#problems li {
+    list-style-image: url(../images/main/bullet_red.svg);
+}
+
+#solutions li {
+    list-style-image: url(../images/main/bullet_green.svg);
+}
+
+.percentages {
+    margin: 2rem 0;
+    padding: 4rem 0;
+}
+
+.percentages p {
+    font-size: 1.6rem;
+    margin-top: 1rem;
+}
+
+.percentages h4 {
+    color: #998D7D;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.persona-container {
+    margin-top: 3rem;
+}
+
+.persona {
+    margin-top: 1rem;
+    padding-bottom: 5rem;
+}
+
+.persona img {
+    width: 100%;
+}
+
+.persona p:nth-of-type(1) {
+    font-size: 2.4rem;
+    font-weight: 900;
+}
+
+.persona p:nth-of-type(2) {
+    color: #73757A;
+    font-size: 2rem;
+    margin-top: 0;
+    padding-bottom: .5rem;
+    border-bottom: 2px solid #73757A;
+}
+
+.persona p:nth-of-type(3), .persona p:nth-of-type(5) {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: .18rem;
+}
+
+.persona p:nth-of-type(4), .persona p:nth-of-type(6) {
+    margin-top: .5rem;
+}
+
+/*----------------About Page -------------------*/
+
+
+.about p {
+    line-height: 1.6;
+    margin-top: 3rem;
+}
+
+.about p:first-of-type {
+    margin-top: 0;
+}
+
+.about h1 {
+    color: #998D7D;
+    font-size: 3.6rem;
+    font-weight: 900;
+    line-height: 4.4rem;
+    margin-top: 5rem;
+}
+
+.about .sub-head {
+    color: #5E667A;
+    font-size: 2.3rem;
+    line-height: 2.9rem;
+    margin-top: 3rem;
+}
+
+.about img {
+    margin: 5rem 0;
+}
+
+.about blockquote h2{
+    color: #998D7D;
+    font-size: 3.5rem;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.about blockquote h4 {
+    font-size: 2.3rem;
+    font-weight: 900;
+}
+
+.quote {
+    padding-top: 0;
+    padding-bottom: 10rem;
+}
+
+.about .color {
+    background: linear-gradient(45deg, #F5F1EB 0%, #F7F7F7 48%, #EDEDF2 100%);
+}
+
+blockquote {
+  text-indent: -2rem;
+  padding-left: 2rem;
+}
+
+
+blockquote h4 {
+    text-indent: .2rem;
+}
+
+#awards h4 {
+    font-size: 2rem;
+    letter-spacing: .3rem;
+    padding: .5rem 0;
+    /* margin: 0 auto; */
+}
+
+#awards h6 {
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+#awards span {
+    color: #998D7D;
+}
+
+#awards li:nth-of-type(1) {
+    margin-top: 1.5rem;
+}
+
+#awards li p:nth-of-type(1) {
+    line-height: 2rem;
+}
+
+#awards li p:nth-of-type(2) {
+    color: #5E667A;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+}
+
+section#awards {
+    padding-top: 0;
+}
