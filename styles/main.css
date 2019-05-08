@@ -6,11 +6,12 @@
 
 html {
     font-size: 10px;
-    /* scroll-behavior: smooth; */
+    scroll-behavior: smooth;
 }
 
 body {
     font-family: 'Lato', sans-serif;
+    background: rgba(51, 50, 53, 1);
 }
 
 a {
@@ -38,112 +39,42 @@ li p {
 img {
     display: block;
     margin: 0 auto;
-    /* width: 100%; */
     max-width: 100%;
 }
 
 section {
+    background: linear-gradient(179deg, #FAF9F7 0%, #EDEDF0 100%);
+    padding: 5rem 0;
+}
+
+main {
+    margin-top: 4rem;
+}
+
+.main-section {
+    padding: 5rem inherit 2.5rem inherit;
     background-image: linear-gradient(179deg, #FAF9F7 0%, #EDEDF0 100%);
-    padding: 5rem 0 5rem 0;
 }
 
-.grid-container{
-    display: grid;
-    grid-template-columns: 3% 1fr 3%;
-}
+/*-- Section Headers need adjustment for grid layouts -–*/
 
-.grid-inset {
+.section-header {
     grid-column-start: 2;
     grid-column-end: 3;
-    overflow: hidden;
 }
 
-.grid-inset-full {
-    grid-column-start: 1;
-    grid-column-end: 4;
+/*––––––––––––––––––––––––––––––––––––––––––––*/
+
+.section-header + section {
+    padding-top: 2rem;
 }
 
-.grid-columns {
+/* .container {
+    background-color: red;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 2rem;
-}
-
-/*---------------- Global Nav -------------------*/
-
-.site-nav {
-    background-color: rgba(51, 50, 53, 0.9);
-    padding: 1rem 0;
-}
-
-.site-nav ul {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
+    grid-template-columns: 1fr;
     margin: 0 auto;
-    max-width: 100rem;
-}
-
-.site-nav a {
-    color: #E1E1E3;
-    display: flex;
-    font-size: calc(1rem + .5vw);
-    padding: 0 1rem;
-    transition: all .2s ease-in-out;
-}
-
-.site-nav a:hover, .site-nav a:active{
-    color: rgb(176, 201, 246);
-}
-
-.site-nav img {
-    /* display: block; */
-    height: 2.4rem;
-    margin-right: 1.3rem;
-    margin-top: .2rem;
-    /* margin: auto; */
-}
-
-
-
-/*---------------- Footer -------------------*/
-
-.main-footer {
-    background: radial-gradient(20% 100%, #52555D 20%, #1C1813 200%);
-    padding: 2rem;
-}
-
-.main-footer ul {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    margin: 2rem auto 0 auto;
-    max-width: 100rem;
-}
-
-/* .main-footer li a {
-    padding: 1rem 2.5rem; */
-
-}
-
-.main-footer h6 {
-    color: #E0E3E8;
-    font-weight: 900;
-    font-size: 2.9rem;
-}
-
-.main-footer p {
-    color: #E0E3E8;
-    font-size: 1.3rem;
-    margin: .75rem 0 1rem 0;
-}
-
-.main-footer img[alt="bw logo reversed"] {
-    height: 25px;
-}
-
-/* .main-footer li:first-of-type {
-    display: none;
+    width: 80%;
 } */
 
 
@@ -153,61 +84,33 @@ section {
     justify-content: center;
 }
 
-
-/*---------------- Lists & Buttons -------------------*/
-
-.list-only {
-    margin: 0;
+.grid-container{
+    display: grid;
+    grid-template-columns: 3% auto 3%;
 }
 
-.list-only li {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+.grid-inset {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    overflow: hidden;
 }
 
-.cta-button {
-    background: #333236;
-    border: 5px solid #998D7D;
-    border-radius: .4rem;
-    outline: 3px solid #D8BF89;
-    outline-offset: -8px;
-    margin: 3.4rem auto 0 auto;
-    transition: all .3s ease-in-out;
-    width: 27.7rem;
+/*-- Needed to compaensate for backgorunds getting cut off match % from grid-container --*/
+
+.grid-inset-full {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+/* ––––––––––––––––––––––––––––––––––––––––––––––  */
+
+.grid-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
 }
 
-.cta-button img {
-    display: inline;
-    margin-top: .15rem;
-    margin: 0 0 0 1rem;
-}
-
-.cta-button a {
-    align-items: center;
-    color: #D7DFEC;
-    display: flex;
-    font-size: 1.8rem;
-    font-weight: 700;
-    justify-content: center;
-    padding: .85rem 0 1rem 0;
-    width: 100%;
-}
-
-.cta-button:hover, .cta-button:active {
-    background: radial-gradient(20% 100%, #52555D 20%, #1C1813 200%), #D8BF89;
-    border: 5px solid #D8BF89;
-    outline: 6px solid #998D7D;
-}
-
-
-.back-to-top p {
-    text-align: center;
-    margin: 0;
-}
-.back-to-top img {
-    width: 6rem;
-}
 
 /*---------------- Global Typography -------------------*/
 
@@ -314,18 +217,211 @@ footer p {
 }
 
 
+/*---------------- Global Nav -------------------*/
 
-
-/*---------------- Verticle -------------------*/
-.main-section {
-    padding: 5rem 0 2.5rem 0;
-    background-image: linear-gradient(179deg, #FAF9F7 0%, #EDEDF0 100%);
+.site-nav {
+  background: rgba(51, 50, 53, .95);
+  /* display: flex; */
+  /* justify-content: space-between; */
+  position: fixed;
+  padding: 2rem 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
 
 
-.section-header + section {
-    padding-top: 2rem;
+.site-nav a, .site-nav p {
+    color: #E1E1E3;
+    font-weight: 700;
+    font-size: 1.6rem;
+    padding: 1rem 0 1rem;
+    transition: all .2s ease-in-out;
 }
+
+.site-nav a:hover, .site-nav a:active {
+    color: #D8BF89;
+}
+
+.site-nav input {
+    display: none;
+}
+
+.site-nav label {
+    /* display: flex; */
+    color: #E1E1E3;
+    font-style: normal;
+    font-size: 3.5rem;
+    line-height: 0;
+    padding: 1rem 4%;
+    transition: all .2s ease-in-out;
+    justify-content: flex-end;
+    position: absolute;
+    right: 0;
+    top: .75rem;
+}
+
+.site-nav label:hover, .site-nav label.active {
+    cursor: pointer;
+    color: #D8BF89;
+}
+
+
+.site-nav ul li {
+    display: block;
+    border-top: .1rem solid rgba(217,159,34,1);
+    border-image-source: linear-gradient(-90deg,  #FFF2D3 0%, rgba(217,159,34,.7) 82%, rgba(17,14,11,.1) 100%);
+    border-image-slice: 1;
+    padding: 1rem 0;
+ }
+
+
+.site-nav ul {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.site-nav ul a {
+    display: block;
+    padding: 1rem 4% 1rem 30%;
+}
+
+.site-nav input:checked ~ ul {
+    background: rgba(28, 24, 19, 0.95);
+    display: block;
+    margin-top: 4rem;
+    text-align: right;
+    width: 100%;
+}
+
+
+
+.logo img {
+    padding: 0;
+    height: 2.4rem;
+    margin-right: 1rem;
+}
+
+.logo a {
+    padding: 0;
+    margin: 0;
+    font-size: 1.6rem;
+}
+
+.logo {
+    /* padding: 1rem; */
+    position: absolute;
+    padding: 1rem 4%;
+    top: -.2rem;
+
+}
+
+
+/*---------------- Footer -------------------*/
+
+.main-footer {
+    background: radial-gradient(20% 100%, #52555D 20%, #1C1813 200%);
+    padding: 2rem;
+}
+
+.main-footer ul {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem auto 0 auto;
+    max-width: 100rem;
+}
+
+/* .main-footer li a {
+    padding: 1rem 2.5rem; */
+
+}
+
+.main-footer h6 {
+    color: #E0E3E8;
+    font-weight: 900;
+    font-size: 2.9rem;
+}
+
+.main-footer p {
+    color: #E0E3E8;
+    font-size: 1.3rem;
+    margin: .75rem 0 1rem 0;
+}
+
+.main-footer img[alt="bw logo reversed"] {
+    height: 25px;
+}
+
+/* .main-footer li:first-of-type {
+    display: none;
+} */
+
+
+
+/*---------------- Lists & Buttons -------------------*/
+
+.list-only {
+    margin: 0;
+}
+
+.list-only li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.cta-button {
+    background: #333236;
+    border: 5px solid #998D7D;
+    border-radius: .4rem;
+    outline: 3px solid #D8BF89;
+    outline-offset: -8px;
+    margin: 3.4rem auto 0 auto;
+    max-width: 27.7rem;
+    transition: all .3s ease-in-out;
+    width: 90%;
+
+}
+
+.cta-button img {
+    display: inline;
+    margin-top: .15rem;
+    margin: 0 0 0 1rem;
+}
+
+.cta-button a {
+    align-items: center;
+    color: #D7DFEC;
+    display: flex;
+    font-size: 1.8rem;
+    font-weight: 700;
+    justify-content: center;
+    padding: .85rem 0 1rem 0;
+    width: 100%;
+}
+
+.cta-button:hover, .cta-button:active {
+    background: radial-gradient(20% 100%, #52555D 20%, #1C1813 200%), #D8BF89;
+    border: 5px solid #D8BF89;
+    outline: 6px solid #998D7D;
+}
+
+
+.back-to-top p {
+    text-align: center;
+    margin: 0;
+}
+.back-to-top img {
+    width: 6rem;
+}
+
+
+
+/*---------------- Special Overides -------------------*/
+
 
 .no-color {
     background: none;
@@ -364,12 +460,12 @@ footer p {
 }
 
 .callout-block-top {
+    align-items: center;
     background: #181C27;
     border-radius: .4rem .4rem 0 0;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 1.5rem 2rem 3rem 2rem;
+    padding: 1.5rem 5% 3rem 5%;
     position: relative;
     width: 100%;
     margin-top: 5rem;
@@ -400,6 +496,13 @@ footer p {
     margin: 0;
 }
 
+.image-margin {
+    margin-top: 4rem;
+}
+
+.cta-buttons p, .sign-up-form p, .choosing-plans p {
+
+}
 
 /*---------------- Landing Page Layout & Typography -------------------*/
 
@@ -410,9 +513,7 @@ footer p {
     border-bottom: .2rem solid rgba(217,159,34,1);
     border-image-source: linear-gradient(-90deg, rgba(17,14,11,.8) 0%, rgba(216,166,33,.7) 20%, #FFF2D3 50%, rgba(217,159,34,.7) 82%, rgba(17,14,11,.8) 100%);
     border-image-slice: 1;
-    padding-left: 0;
-    padding-right: 0;
-    /* height: 100vh; */
+    padding-top: 3rem;
 }
 
 .landing a{
@@ -448,6 +549,7 @@ footer p {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
 }
 
 .landing h1 {
@@ -455,7 +557,7 @@ footer p {
     /* justify-content: center; */
     font-size: 3.4rem;
     color: #FFFAEE;
-    letter-spacing: 1.578rem;
+    letter-spacing: 1rem;
     text-align: center;
     text-transform: uppercase;
     margin: 0 auto 2rem auto;
@@ -483,7 +585,7 @@ footer p {
 
 img[alt="bw main logo"] {
     max-width: 30%;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 
 img[alt="diamond"] {
@@ -504,8 +606,7 @@ img[alt="flare left"], [alt="flare right"] {
 
 /*---------------- Project Section Layout & Typography -------------------*/
 .project-one {
-    background: url(../images/sozo_images/sozo_hero_image.jpg) no-repeat, linear-gradient(-63deg, #F5F1EB 0%, #EDEDF2 95%) ;
-    padding: 5rem 0 5rem 0;
+    background: url(../images/sozo_images/sozo_hero_image.jpg) no-repeat, linear-gradient(-63deg, #F5F1EB 0%, #EDEDF2 95%);
     background-size: contain;
     padding-top: 10%;
 }
@@ -519,13 +620,13 @@ img[alt="flare left"], [alt="flare right"] {
 
 /*---------------- Case Study Intro Layout & Typography -------------------*/
 #summary {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, .5) 2%, rgba(0, 0, 0, 0) 6%), url(../images/sozo_images/sozo_hero_image.jpg) no-repeat, linear-gradient(144deg, #63666E 15%, #110E0B 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .5) 1%, rgba(0, 0, 0, 0) 5%), url(../images/sozo_images/sozo_hero_image.jpg) no-repeat, linear-gradient(144deg, #63666E 15%, #110E0B 100%);
     background-size: contain;
     padding-top: 5%;
 }
 
 .intro img[alt="SOZO logo"] {
-    max-width: 40%;
+    max-width: 50%;
     margin: 0 auto 2rem auto;
 }
 
@@ -615,6 +716,48 @@ img[alt="flare left"], [alt="flare right"] {
 
 .persona p:nth-of-type(4), .persona p:nth-of-type(6) {
     margin-top: .5rem;
+}
+
+.back-to-top {
+    margin-top: 5rem;
+}
+
+.final-images img {
+    margin-top: 2rem;
+}
+
+.pref-top h4 {
+    margin-top: 2rem;
+}
+
+.pref-top p {
+    color: #80889C;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+.pref-top + img {
+    margin-top: 2rem;
+}
+
+.pref-bottom {
+    display: flex;
+    margin-bottom: 5rem;
+    margin-top: 1rem;
+}
+
+.pref-bottom h4 {
+    color: #998D7D;
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-right: 2rem;
+}
+
+.pref-bottom p {
+    color: #13131F;
+    font-size: 1.4rem;
+    margin-top: 0;
 }
 
 /*----------------About Page -------------------*/
@@ -711,4 +854,41 @@ blockquote h4 {
 
 section#awards {
     padding-top: 0;
+}
+
+
+/*----------------Media Queries -------------------*/
+
+@media screen and (min-width: 700px) {
+    /*----------  Nav  --------------*/
+    /* Hide Hamburger */
+    .site-nav label, .hamburger {
+        display: none;
+    }
+
+    /* Menu Items */
+    .site-nav ul {
+        display: block;
+        padding-right: 3%;
+    }
+    .site-nav ul li {
+        border-top: none;
+        display: inline-block;
+        padding: 1rem;
+    }
+    .site-nav ul a {
+        display: inline;
+        padding: 0;
+    }
+
+    #caseStudyNav span {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 830px) {
+    #caseStudyNav span {
+        display: block;
+    }
 }
