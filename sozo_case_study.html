@@ -13,7 +13,8 @@
         <nav id="caseStudyNav" class="site-nav">
             <div class="logo">
                 <a href="index.html" title="Home" class="container-flex">
-                    <img src="images/main/bw_logo_reversed.svg" alt="bw logo reversed"><span>Brian&nbsp;Warchesik</span></a>
+                    <img src="images/main/bw_logo_reversed.svg" alt="bw logo reversed"><span>Brian&nbsp;Warchesik</span>
+                </a>
             </div>
 
             <div class="nav-right">
@@ -50,15 +51,15 @@
                         </div>
 
                         <div class="design-roles">
-                            <h4>Design Roles</h4>
                             <ul class="list-only list-reverse">
+                                <li><h4>Design Roles</h4></li>
                                 <li>UX Design</li>
                                 <li>Visual Design</li>
                                 <li>Branding &amp; Identity</li>
                             </ul>
 
-                            <h4>Deliverables</h4>
                             <ul class="list-only list-reverse">
+                                <li><h4>Deliverables</h4></li>
                                 <li>Competitive Analysis</li>
                                 <li>User Surveys</li>
                                 <li>User Personas</li>
@@ -71,8 +72,8 @@
                                 <li>Clickable Prototypes</li>
                             </ul>
 
-                            <h4>Tools</h4>
                             <ul class="list-only list-reverse">
+                                <li><h4>Tools</h4></li>
                                 <li>Sketch</li>
                                 <li>InVision</li>
                                 <li>Adobe CS</li>
@@ -83,12 +84,11 @@
                     </div>
                 </section>
 
-                <section id="overview" class="main-section grid-container">
+                <section id="overview" class="main-section grid-inset-full">
                     <h1 class="section-header">Overview</h1>
 
-
-                    <section id="problems" class="grid-inset-full">
-
+                    <div class="overview-container">
+                        <div class="callout-container problems">
                             <div class="callout-block-top no-margin">
                                 <h4>Problems</h4>
                                 <img src="images/main/problem_icon.svg" alt="problem icon">
@@ -110,11 +110,10 @@
                                     </li>
                                 </ul>
                             </div>
+                        </div>
 
-                    </section>
 
-                    <section id="solutions" class="grid-inset-full">
-
+                        <div class="callout-container solutions">
                             <div class="callout-block-top no-margin">
                                 <h4>Solutions</h4>
                                 <img src="images/main/solution_icon.svg" alt="solution icon">
@@ -136,12 +135,13 @@
                                     </li>
                                 </ul>
                             </div>
+                        </div>
+                    </div>
 
-                            <p>While most people use cloud storage, many users are incorporating multiple platforms for different purposes. Protecting data, knowing where data is located and customizing organization is essential.</p>
+                    <p>While most people use cloud storage, many users are incorporating multiple platforms for different purposes. Protecting data, knowing where data is located and customizing organization is essential.</p>
 
-                            <p class="p-secondary">While competitive analysis and user research revealed a myriad of frustrations for users of current cloud applications the main pain points are listed above.</p>
+                    <p class="p-secondary">While competitive analysis and user research revealed a myriad of frustrations for users of current cloud applications the main pain points are listed above.</p>
 
-                    </section>
                 </section>
 
                 <section id="discovery" class="main-section grid-container">
@@ -150,50 +150,58 @@
 
                     <section id="competiveAnalysis" class="grid-inset-full">
 
-                        <!-- <div class="grid-inset"> -->
                             <h2>Competitive Analysis Highlights</h2>
                             <p>To find out what I was up against in the cloud storage arena, I began by performing a full Competitive Analysis including a SWOT analysis of 3 of the top competitors.</p>
                             <p class="p-secondary">While all three of these services offer a reasonably priced, and relatively easy to use experience, these defining factors stand out as obstacles for these entities:</p>
 
-                            <div class="callout-block-top">
-                                <h4>Dropbox</h4>
-                                <img src="images/sozo_images/dropbox_logo.png" alt="dropbox logo">
-                            </div>
+                            <div class="competition-callouts">
+                                <div class="callout-container">
+                                    <div class="callout-block-top">
+                                        <h4>Dropbox</h4>
+                                        <img src="images/sozo_images/dropbox_logo.png" alt="dropbox logo">
+                                    </div>
 
-                            <div class="callout-block-bottom">
-                                <ul>
-                                    <li>Inability to link to other cloud storage services</li>
-                                    <li>Lack of zero-knowledge encryption for files &amp; folders</li>
-                                    <li>Limited customization options</li>
-                                    <li>Tainted Reputation – 2012 security breach</li>
-                                </ul>
-                            </div>
+                                    <div class="callout-block-bottom">
+                                        <ul>
+                                            <li>Inability to link to other cloud storage services</li>
+                                            <li>Lack of zero-knowledge encryption for files &amp; folders</li>
+                                            <li>Limited customization options</li>
+                                            <li>Tainted Reputation – 2012 security breach</li>
+                                        </ul>
+                                    </div>
+                                </div>
 
-                            <div class="callout-block-top">
-                                <h4>GoogleDrive</h4>
-                                <img src="images/sozo_images/google_drive_logo.png" alt="google drive logo">
-                            </div>
 
-                            <div class="callout-block-bottom">
-                                <ul>
-                                    <li>Inability to link to other cloud storage services</li>
-                                    <li>Lack of zero-knowledge encryption for files &amp; folders</li>
-                                    <li>Limited customization options</li>
-                                </ul>
-                            </div>
+                                <div class="callout-container">
+                                    <div class="callout-block-top">
+                                        <h4>GoogleDrive</h4>
+                                        <img src="images/sozo_images/google_drive_logo.png" alt="google drive logo">
+                                    </div>
 
-                            <div class="callout-block-top">
-                                <h4>Sync.com</h4>
-                                <img src="images/sozo_images/sync_com_logo.png" alt="sync.com logo">
-                            </div>
+                                    <div class="callout-block-bottom">
+                                        <ul>
+                                            <li>Inability to link to other cloud storage services</li>
+                                            <li>Lack of zero-knowledge encryption for files &amp; folders</li>
+                                            <li>Limited customization options</li>
+                                        </ul>
+                                    </div>
+                                </div>
 
-                            <div class="callout-block-bottom">
-                                <ul>
-                                    <li>Inability to link to other cloud storage services</li>
-                                    <li>No applications for creating or modifying files</li>
-                                    <li>No customization options</li>
-                                    <li>Limited user experience</li>
-                                </ul>
+                                <div class="callout-container">
+                                    <div class="callout-block-top">
+                                        <h4>Sync.com</h4>
+                                        <img src="images/sozo_images/sync_com_logo.png" alt="sync.com logo">
+                                    </div>
+
+                                    <div class="callout-block-bottom">
+                                        <ul>
+                                            <li>Inability to link to other cloud storage services</li>
+                                            <li>No applications for creating or modifying files</li>
+                                            <li>No customization options</li>
+                                            <li>Limited user experience</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
 
                             <p><strong>Key Insights</strong></p>
@@ -257,41 +265,49 @@
 
                     </section>
 
-                    <section id="userPersonas" class="grid-inset-full">
+                    <section id="userPersonas" class="grid-inset-none">
 
+                        <div class="inset-padding">
                             <h2>User Personas</h2>
                             <p>Three users with unique roles and experience levels were interviewed about their goals and frustrations when using cloud storage applications.</p>
                             <p class="p-secondary">The interviews coupled with the primary audience of creatives from the user surveys served to create the three personas shown below.</p>
+                        </div>
 
                             <div class="persona-container">
-                                <div class="persona">
+                                <div class="persona drop-shadow">
                                     <img src="images/sozo_images/persona_one.jpg" alt="persona 1 picture">
-                                    <p>Sally The Student</p>
-                                    <p>25 Year Old Student</p>
-                                    <p>Goals</p>
-                                    <p>Wants to organize her content differently than her service currently allows. She also wants options for protecting and tracking her files when she shares them.</p>
-                                    <p>Frustrations</p>
-                                    <p>Can’t customize solutions to organize her content and she lacks security options for files and folders</p>
+                                        <div class="inset-padding">
+                                        <p>Sally The Student</p>
+                                        <p>25 Year Old Student</p>
+                                        <p>Goals</p>
+                                        <p>Wants to organize her content differently than her service currently allows. She also wants options for protecting and tracking her files when she shares them.</p>
+                                        <p>Frustrations</p>
+                                        <p>Can’t customize solutions to organize her content and she lacks security options for files and folders</p>
+                                    </div>
                                 </div>
 
-                                <div class="persona">
+                                <div class="persona drop-shadow">
                                     <img src="images/sozo_images/persona_two.jpg" alt="persona 2 picture">
-                                    <p>Ina The Illustrator</p>
-                                    <p>36 Year Old Illustrator</p>
-                                    <p>Goals</p>
-                                    <p>Would like to spend less time organizing her files and more time creating and wants to personalize her cloud storage application to increase her productivity.</p>
-                                    <p>Frustrations</p>
-                                    <p>The lack of ability to place visual icons or images on her folders causes the need to open hundreds of them to find what file she wants.</p>
+                                    <div class="inset-padding">
+                                        <p>Ina The Illustrator</p>
+                                        <p>36 Year Old Illustrator</p>
+                                        <p>Goals</p>
+                                        <p>Would like to spend less time organizing her files and more time creating and wants to personalize her cloud storage application to increase her productivity.</p>
+                                        <p>Frustrations</p>
+                                        <p>The lack of ability to place visual icons or images on her folders causes the need to open hundreds of them to find what file she wants.</p>
+                                    </div>
                                 </div>
 
-                                <div class="persona">
+                                <div class="persona drop-shadow">
                                     <img src="images/sozo_images/persona_three.jpg" alt="persona 3 picture">
-                                    <p>Max The Manager</p>
-                                    <p>33 Year Old Digital Asset Manager</p>
-                                    <p>Goals</p>
-                                    <p>Wants easy to use security options for files &amp; folders. He needs secure sharing and collaboration of files by having permission options for different users.</p>
-                                    <p>Frustrations</p>
-                                    <p>Can’t find a service offering top-notch security and maximum usability. Unable to find a service to track links and permissions granted to users.</p>
+                                    <div class="inset-padding">
+                                        <p>Max The Manager</p>
+                                        <p>33 Year Old Digital Asset Manager</p>
+                                        <p>Goals</p>
+                                        <p>Wants easy to use security options for files &amp; folders. He needs secure sharing and collaboration of files by having permission options for different users.</p>
+                                        <p>Frustrations</p>
+                                        <p>Can’t find a service offering top-notch security and maximum usability. Unable to find a service to track links and permissions granted to users.</p>
+                                    </div>
                                 </div>
                             </div>
                             <!-- CTA Button -->
@@ -332,8 +348,9 @@
                             <p>User Stories were converted into User Flows to demonstrate how the user could interact with the product and accomplish specific tasks. These were first sketched out on paper.</p>
                             <p class="p-secondary">Further development and iterations were rendered in the application, Draw.io.</p>
 
-                            <div>
-                                <img src="images/sozo_images/change_security_userflow.png" alt="change security userflow">
+                            <div class="image-margin">
+                                <img src="images/sozo_images/change_security_userflow_mobile.jpg" alt="change security userflow mobile version" class="img-mobile drop-shadow round-corner">
+                                <img src="images/sozo_images/change_security_userflow.png" alt="change security userflow" class="img-desktop">
                                 <p class="captions"><strong>Change Security Of Files/Folders User Flow |</strong> Draw.io format</p>
                             </div>
 
@@ -350,24 +367,24 @@
                             <p>After establishing the user stories and flows, I began creating the skeletal structure of the application with pencil and paper to quickly sketch out the rough ideas.</p>
                             <p class="p-secondary">These were then transformed into low fidelity digital mock-ups and prototypes using Sketch and InVision for prototyping.</p>
 
-                            <div>
+                            <div class="wireframes-container">
                                 <div class="image-margin">
-                                    <img src="images/sozo_images/dashboard_sketch_empty.jpg" alt="sketch of empty state">
+                                    <img src="images/sozo_images/dashboard_sketch_empty.jpg" alt="sketch of empty state" class="drop-shadow round-corner">
                                     <p class="captions"><strong>Dashboard Empty State |</strong> Hand sketched format</p>
                                 </div>
 
                                 <div class="image-margin">
-                                    <img src="images/sozo_images/dashboard_digital_empty.jpg" alt="digital version of empty state">
+                                    <img src="images/sozo_images/dashboard_digital_empty.jpg" alt="digital version of empty state" class="drop-shadow round-corner">
                                     <p class="captions"><strong>Dashboard Empty State |</strong> Created in Sketch</p>
                                 </div>
 
                                 <div class="image-margin">
-                                    <img src="images/sozo_images/dashboard_sketch_full.jpg" alt="sketch of filled state">
+                                    <img src="images/sozo_images/dashboard_sketch_full.jpg" alt="sketch of filled state" class="drop-shadow round-corner">
                                     <p class="captions"><strong>Dashboard Filled State |</strong> Hand sketched format</p>
                                 </div>
 
                                 <div class="image-margin">
-                                    <img src="images/sozo_images/dashboard_digital_full.jpg" alt="digital version of filled state">
+                                    <img src="images/sozo_images/dashboard_digital_full.jpg" alt="digital version of filled state" class="drop-shadow round-corner">
                                     <p class="captions"><strong>Dashboard Filled State |</strong> Created in Sketch</p>
                                 </div>
                             </div>
@@ -397,7 +414,8 @@
 
                             <p><strong>These problems would be addressed in the high fidelity phase of the project.</strong></p>
                             <div class="image-margin">
-                                <img src="images/sozo_images/usability_test_one.jpg" alt="usability test image">
+                                <img src="images/sozo_images/usability_test_one_mobile.jpg" alt="usability test image mobile" class="drop-shadow round-corner img-mobile">
+                                <img src="images/sozo_images/usability_test_one.jpg" alt="usability test image" class="drop-shadow round-corner img-desktop">
                                 <p class="captions"><strong>Problamatic Areas |</strong> Highlighted Above</p>
                             </div>
 
@@ -407,12 +425,14 @@
                 <section id="branding" class="main-section grid-container">
                     <h1 class="section-header">Branding</h1>
 
-                        <div class="grid-inset-full">
-                            <p>After establishing the functionality of SOZO, it was time to develop the name, look, and feel for the application. See the <a href="https://drive.google.com/file/d/1z0DtUYW7K1s52F9VrBQAgvPWazXZ5q5N/view?usp=sharing" target="_blank">SOZO Style Guide</a> for more details.</p>
+                        <div class="grid-inset-none">
+                            <div class="grid-inset-full">
+                                <p>After establishing the functionality of SOZO, it was time to develop the name, look, and feel for the application. See the <a href="https://drive.google.com/file/d/1z0DtUYW7K1s52F9VrBQAgvPWazXZ5q5N/view?usp=sharing" target="_blank">SOZO Style Guide</a> for more details.</p>
+                            </div>
 
                             <div class="image-margin">
                                 <img src="images/sozo_images/mindmap_moodboard.jpg" alt="mindmap and moodboard image">
-                                <p class="captions"><strong>Brand Discovery |</strong> Mind Mapping, Moodboards, &amp; research were used in the development of the logo &amp; branding visuals.</p>
+                                <p class="captions grid-inset-full"><strong>Brand Discovery |</strong> Mind Mapping, Moodboards, &amp; research were used in the development of the logo &amp; branding visuals.</p>
                             </div>
                         </div>
 
@@ -437,38 +457,54 @@
 
                         </section>
 
-                        <section id="finalLogos" class="grid-inset-full">
+                        <section id="finalLogos" class="grid-inset-none">
 
+                            <div class="inset-padding">
                                 <h2>Final Logos</h2>
                                 <p>Whether in a positive or negative form, every character in the name SOZO is represented in the icon. Other symbols such as fire, infinity and syncing are present leaving the mark open to interpretation for the viewers.</p>
+                            </div>
 
-                                <div class="image-margin">
-                                    <img src="images/sozo_images/final_sozo_logo.jpg" alt="final sozo logo">
-                                    <p class="captions"><strong>Final Main Logo |</strong> See style guide for other options and use cases</p>
-                                </div>
+                            <div class="image-margin final-logos">
+                                <img src="images/sozo_images/sozo_logo_main_4c.png" alt="final sozo logo mobile" class="img-mobile">
+                                <img src="images/sozo_images/final_sozo_logo.jpg" alt="final sozo logo" class="img-desktop">
+                                <p class="captions"><strong>Final Main Logo |</strong> See style guide for other options and use cases</p>
+                            </div>
 
                         </section>
 
                         <section id="typography" class="grid-inset-full">
 
-                                <h2>Typography</h2>
-                                <p>Montserrat</p>
-                                <p>Montserrat characterizes a modern typeface allowing a geometric look similar to the word-mark in the logo, yet different enough to create a complimentary feel. It lends itself well to the futuristic and airiness intended for the brand itself and reflects modern simplicity.</p>
+                            <div class="typography-container">
+                                <div class="type">
+                                    <h2>Typography</h2>
+                                    <p>Montserrat</p>
+                                    <p>Montserrat characterizes a modern typeface allowing a geometric look similar to the word-mark in the logo, yet different enough to create a complimentary feel. It lends itself well to the futuristic and airiness intended for the brand itself and reflects modern simplicity.</p>
+                                </div>
 
-                                <img src="images/sozo_images/typography.png" alt="typography image" class="image-margin">
+                                <div>
+                                    <img src="images/sozo_images/typography.png" alt="typography image" class="image-margin">
+                                </div>
+                            </div>
 
                         </section>
 
                         <section id="palette" class="grid-inset-full">
 
-                                <h2>Palette</h2>
-                                <p>The colors used for SOZO were comprised from a complimentary palette ranging from the blue/grey range to denote trustworthiness and eliminate stress, to the warmer orange and purple tones meant to be used as accent colors to keep the brand from feeling muted and dull.</p>
-                                <img src="images/sozo_images/palette_colors.png" alt="color palette" class="image-margin">
-
-                                <!-- CTA Button -->
-                                <div class="cta-button">
-                                    <a href="https://drive.google.com/file/d/1z0DtUYW7K1s52F9VrBQAgvPWazXZ5q5N/view?usp=sharing" target="_blank">See Style Guide <img src="images/main/button_triangle.svg" alt="tiangle"></a>
+                            <div class="palette-container">
+                                <div class="type">
+                                    <h2>Palette</h2>
+                                    <p>The colors used for SOZO were comprised from a complimentary palette ranging from the blue/grey range to denote trustworthiness and eliminate stress, to the warmer orange and purple tones meant to be used as accent colors to keep the brand from feeling muted and dull.</p>
                                 </div>
+
+                                <div>
+                                    <img src="images/sozo_images/palette_colors.png" alt="color palette" class="image-margin">
+                                </div>
+                            </div>
+
+                            <!-- CTA Button -->
+                            <div class="cta-button">
+                                <a href="https://drive.google.com/file/d/1z0DtUYW7K1s52F9VrBQAgvPWazXZ5q5N/view?usp=sharing" target="_blank">See Style Guide <img src="images/main/button_triangle.svg" alt="tiangle"></a>
+                            </div>
 
                         </section>
                     </section>
@@ -497,13 +533,19 @@
                                 <p>Readability of the text within the CTA buttons when words were in all caps vs title case.</p>
                             </div>
 
-                            <img src="images/sozo_images/landing_page_top_before.jpg" alt="landing page before" class="image-margin">
+                            <div class="pref-container">
+                                <div class="unchosen">
+                                    <img src="images/sozo_images/landing_page_top_before.jpg" alt="landing page before" class="image-margin">
+                                </div>
 
-                            <img src="images/sozo_images/landing_page_top_after.jpg" alt="landing page chosen" class="image-margin">
+                                <div class="chosen">
+                                    <img src="images/sozo_images/landing_page_top_after.jpg" alt="landing page chosen" class="image-margin">
 
-                            <div class="pref-bottom">
-                                <h4>73&percnt;</h4>
-                                <p>thought the text of the CTA buttons in all caps was easier to read.</p>
+                                    <div class="pref-bottom">
+                                        <h4>73&percnt;</h4>
+                                        <p>thought the text of the CTA buttons in all caps was easier to read.</p>
+                                    </div>
+                                </div>
                             </div>
 
                             <div class="pref-top">
@@ -511,13 +553,19 @@
                                 <p>Would participants prefer to enter a password once and be able to view it, or enter a password twice with the inclusion of a confirmation field?</p>
                             </div>
 
-                            <img src="images/sozo_images/sign_up_before.jpg" alt="sign up form before" class="image-margin">
+                            <div class="pref-container">
+                                <div class="unchosen">
+                                    <img src="images/sozo_images/sign_up_before.jpg" alt="sign up form before" class="image-margin">
+                                </div>
 
-                            <img src="images/sozo_images/sign_up_after.jpg" alt="sign up form chosen" class="image-margin">
+                                <div class="chosen">
+                                    <img src="images/sozo_images/sign_up_after.jpg" alt="sign up form chosen" class="image-margin">
 
-                            <div class="pref-bottom">
-                                <h4>60&percnt;</h4>
-                                <p>preferred entering their password only once with the ability to view it because it was faster for them.</p>
+                                    <div class="pref-bottom">
+                                        <h4>60&percnt;</h4>
+                                        <p>preferred entering their password only once with the ability to view it because it was faster for them.</p>
+                                    </div>
+                                </div>
                             </div>
 
                             <div class="pref-top">
@@ -525,13 +573,19 @@
                                 <p>When choosing a plan, would participants prefer a consistent color within the plan options, or a varied color schemes to aid in differentiating their choices?</p>
                             </div>
 
-                            <img src="images/sozo_images/plan_option_before.jpg" alt="plan option before" class="image-margin">
+                            <div class="pref-container">
+                                <div class="unchosen">
+                                    <img src="images/sozo_images/plan_option_before.jpg" alt="plan option before" class="image-margin">
+                                </div>
 
-                            <img src="images/sozo_images/plan_option_after.jpg" alt="plan option chosen" class="image-margin">
+                                <div class="chosen">
+                                    <img src="images/sozo_images/plan_option_after.jpg" alt="plan option chosen" class="image-margin">
 
-                            <div class="pref-bottom">
-                                <h4>90&percnt;</h4>
-                                <p>preferred a varied color scheme within the tiered plan options because it made the options more visible to them.</p>
+                                    <div class="pref-bottom">
+                                        <h4>90&percnt;</h4>
+                                        <p>preferred a varied color scheme within the tiered plan options because it made the options more visible to them.</p>
+                                    </div>
+                                </div>
                             </div>
 
                         </section>
@@ -559,20 +613,25 @@
                                 </ul>
 
                                 <div class="image-margin">
-                                    <img src="images/sozo_images/dashboard_info_overlay.jpg" alt="overlay example">
+                                    <img src="images/sozo_images/dashboard_info_overlay_mobile.jpg" alt="overlay example mobile" class="drop-shadow round-corner img-mobile">
+
+                                    <img src="images/sozo_images/dashboard_info_overlay.jpg" alt="overlay example" class="drop-shadow round-corner img-desktop">
+
                                     <p class="captions"><strong>Info Button |</strong>  The info button functionality was implemented for users so they would not have to switch between list and grid view to display needed information about folders and files.</p>
                                 </div>
 
                                 <p class="p-secondary">Increasing the <span class="magenta">font weight</span> on the information within the list view resolved a possible <span class="magenta">accessibility issue</span> for users.</p>
 
-                                <div class="image-margin">
-                                    <img src="images/sozo_images/access_before.jpg" alt="before">
-                                    <p class="captions"><strong>Contrast Issue |</strong><strong class="magenta">  Before</strong></p>
-                                </div>
+                                <div class="b-and-a-container">
+                                    <div class="image-margin">
+                                        <img src="images/sozo_images/access_before.jpg" alt="before" class="drop-shadow round-corner">
+                                        <p class="captions"><strong>Contrast Issue |</strong><strong class="magenta">  Before</strong></p>
+                                    </div>
 
-                                <div class="image-margin">
-                                    <img src="images/sozo_images/access_after.jpg" alt="after">
-                                    <p class="captions"><strong>Contrast Issue |</strong><strong class="green">  After</strong></p>
+                                    <div class="image-margin">
+                                        <img src="images/sozo_images/access_after.jpg" alt="after" class="drop-shadow round-corner">
+                                        <p class="captions"><strong>Contrast Issue |</strong><strong class="green">  After</strong></p>
+                                    </div>
                                 </div>
 
                         </section>
@@ -580,25 +639,29 @@
 
 
                     <section id="finalDesign" class="main-section grid-container">
-                        <h1 class="section-header">Final Design</h1>
+                        <h1 class="section-header headings-reverse">Final Design</h1>
 
-                            <section class="grid-inset-full">
-                                <div class="final-images">
-                                    <img src="images/sozo_images/final_designs/landing_page_top.jpg" alt="landing page">
-                                    <img src="images/sozo_images/final_designs/features_sync.jpg" alt="features">
-                                    <img src="images/sozo_images/final_designs/acount_settings_modal.jpg" alt="account modal">
-                                    <img src="images/sozo_images/final_designs/moblie_home.jpg" alt="mobile home">
-                                    <img src="images/sozo_images/final_designs/mobile_plans.jpg" alt="mobile plans">
-                                    <img src="images/sozo_images/final_designs/mobile_dasboard.jpg" alt="mobile dashboard">
-                                    <img src="images/sozo_images/final_designs/testimonials.jpg" alt="testimonials">
-                                    <img src="images/sozo_images/final_designs/new_folder_modal.jpg" alt="new folder modal">
-                                    <img src="images/sozo_images/final_designs/dashboard_view_grid.jpg" alt="dashboard grid view">
+                            <div class="img-layout grid-inset-none">
+                                <div class="final-images inset-padding">
+                                    <img src="images/sozo_images/final_designs/landing_page_top.png" alt="landing page">
+                                    <img src="images/sozo_images/final_designs/features_sync.png" alt="features">
+                                    <img src="images/sozo_images/final_designs/dashboard_view_list.png" alt="list view">
+                                    <img src="images/sozo_images/final_designs/acount_settings_modal.png" alt="account modal">
+                                    <img src="images/sozo_images/final_designs/new_folder_modal.png" alt="new folder modal">
+                                    <img src="images/sozo_images/final_designs/dashboard_view_grid.png" alt="dashboard grid view">
+                                    <img src="images/sozo_images/final_designs/moblie_home.png" alt="mobile home">
+                                    <img src="images/sozo_images/final_designs/mobile_plans.png" alt="mobile plans">
+                                    <img src="images/sozo_images/final_designs/mobile_dasboard.png" alt="mobile dashboard">
+                                    <img src="images/sozo_images/final_designs/testimonials.png" alt="testimonials">
                                 </div>
+
                                 <!-- CTA Button -->
                                 <div class="cta-button">
                                     <a href="https://invis.io/5CPELCAMBVH#/334509445_Homepage" target="_blank">See Prototype <img src="images/main/button_triangle.svg" alt="triangle"></a>
                                 </div>
-                            </section>
+
+                            </div>
+
 
                         </section>
 
