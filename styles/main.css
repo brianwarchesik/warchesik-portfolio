@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+.js-loading *,
+.js-loading *:before,
+.js-loading *:after {
+    animation-play-state: paused !important;
+}
+
 html {
     font-size: 10px;
     scroll-behavior: smooth;
@@ -11,7 +17,7 @@ html {
 
 body {
     font-family: 'Lato', sans-serif;
-    background: rgba(51, 50, 53, 1);
+    /* background: rgba(51, 50, 53, 1); */
 }
 
 a {
@@ -55,19 +61,12 @@ section {
 }
 
 main {
-    padding-top: 5.5rem;
+    padding-top: 6rem;
 }
 
 .main-section {
     padding: 5rem 0 2.5rem 0;
     background-image: linear-gradient(179deg, #FAF9F7 0%, #EDEDF0 100%);
-}
-
-/*-- Section Headers need adjustment for grid layouts -–*/
-
-.section-header {
-    grid-column-start: 2;
-    grid-column-end: 3;
 }
 
 
@@ -84,11 +83,29 @@ main {
     filter: blur(60px);
     opacity: .15;
     overflow: hidden;
+    z-index: 5;
+}
+
+/* .nav-target {
+    height: 3rem;
+} */
+
+#summaryTarget {
+    position: absolute;
+    top: 0;
 }
 
 /*––––––––––––––––––––––––––––––––––––––––––––*/
 
 /*---------------- Global Layout -------------------*/
+
+/*-- Section Headers need adjustment for grid layouts -–*/
+
+.section-header {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
 
 .section-header + section {
     padding-top: 2rem;
@@ -263,10 +280,11 @@ footer p {
   align-items: center;
   justify-content: space-between;
   position: fixed;
-  padding: 1.5rem 3%;
+  height: 5rem;
+  padding: 3rem 3%;
   top: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 10;
 }
 
 
@@ -324,10 +342,10 @@ footer p {
     flex-direction: column;
     width: 100%;
     position: absolute;
-    right: 0;
-    margin-top: 2.5rem;
+    left: 0;
+    margin-top: 2.25rem;
     text-align: right;
-    width: 100%;
+    /* width: 100%; */
 }
 
 
@@ -343,9 +361,6 @@ footer p {
     align-items: center;
 }
 
-/* .section-divider {
-    padding-top: .1rem;
-} */
 
 /*---------------- Footer -------------------*/
 
@@ -531,17 +546,61 @@ footer p {
     border-radius: .4rem;
 }
 
-/*---------------- Landing Page Layout & Typography -------------------*/
+/*---------------- Landing Page Layout, Typography, Animation -------------------*/
+
+.down-triangle {
+    position: absolute;
+    bottom: 6rem;
+    left: 0;
+    margin: 0 auto;
+    right: 0;
+    width: 5rem;
+    z-index: 3;
+}
+
+.landing:before {
+    background: url(../images/main/grid_expanded_horizontal.png)right 0 top 0 no-repeat;
+    background-size: cover;
+    content: "";
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    right: 0;
+    top: 0;
+    -webkit-animation: fade-horizontal 7s cubic-bezier(.24,.34,.44,.77) infinite;
+    animation: fade-horizontal 7s cubic-bezier(.24,.34,.44,.77) infinite;
+    width: 100%;
+    z-index: 1;
+}
+
+.landing:after {
+    background: url(../images/main/grid_vert.png)right 0 top 0 no-repeat;
+    background-size: cover;
+    content: "";
+    height: 100%;
+    position: absolute;
+    opacity: 1;
+    right: 0;
+    top: 0;
+    -webkit-animation: fade-vertical 9s cubic-bezier(.24,.34,.44,.77) infinite;
+    animation: fade-vertical 9s cubic-bezier(.24,.34,.44,.77) infinite;
+    width: 100%;
+    z-index: 2;
+}
+
 
 .landing {
-    background: url(../images/main/design_graphic.svg)right 0 bottom 13rem no-repeat, url(../images/main/grid_expanded.png)right 2rem bottom 0 no-repeat, linear-gradient(144deg, #63666E 15%, #110E0B 100%);
-    background-size: contain, cover;
+    background: url(../images/main/design_graphic.svg)right 0 bottom 12rem no-repeat, url(../images/main/grid_expanded.png)right 0 top 0 no-repeat,  linear-gradient(144deg, #63666E 15%, #110E0B 100%);
+    background-size: contain, cover, cover;
+    position: relative;
 
     border-bottom: .2rem solid rgba(217,159,34,1);
     border-image-source: linear-gradient(-90deg, rgba(17,14,11,.8) 0%, rgba(216,166,33,.7) 20%, #FFF2D3 50%, rgba(217,159,34,.7) 82%, rgba(17,14,11,.8) 100%);
     border-image-slice: 1;
-    padding-top: 3rem;
+    padding: 3rem 0;
+    overflow: hidden;
 }
+
 
 .landing a{
     color: #D8BF89;
@@ -580,11 +639,16 @@ footer p {
 }
 
 .landing h1 {
+    margin: 0 auto 2rem auto;
+
+}
+
+.lastName {
     color: #FFFAEE;
     font-size: 3.4rem;
     font-weight: 300;
     letter-spacing: 1.6rem;
-    margin: 0 auto 2rem auto;
+    margin-right: -1.6rem;
     text-align: center;
     text-transform: uppercase;
 }
@@ -604,27 +668,23 @@ footer p {
     font-size: 2rem;
     font-weight: 300;
     letter-spacing: .37rem;
-    margin-top: 4rem;
+    margin-top: 8.5rem;
     text-align: center;
     text-transform: uppercase;
 }
 
 
-img[alt="bw main logo"] {
+img[alt="bw main logo"], img[alt="animated shine"] {
     max-width: 30%;
     /* margin: 0 auto; */
 }
+
 
 img[alt="diamond"] {
     margin: 5rem auto 0 auto;
     width: 3rem;
 }
 
-
-img[alt="down triangle"] {
-    margin: 1.8rem auto 0 auto;
-    width: 5rem;
-}
 
 img[alt="flare left"], [alt="flare right"] {
     display: none;
@@ -652,7 +712,7 @@ img[alt="flare left"], [alt="flare right"] {
     padding-top: 5%;
 }
 
-.intro img[alt="SOZO logo"] {
+.intro img[alt="SOZO Logo"] {
     max-width: 50%;
     margin: 0 auto 2rem auto;
 }
@@ -678,7 +738,7 @@ img[alt="flare left"], [alt="flare right"] {
     color: #E1E1E3;
     font-size: 2.4rem;
     font-weight: 700;
-    margin: 2rem 0 1rem 0;
+    margin: 5rem 0 1rem 0;
     padding-bottom: 1rem;
     border-bottom: .5rem solid #ABADB1;
 
@@ -968,9 +1028,229 @@ section#awards {
     display: none;
 }
 
+/*---------------- Animations -------------------*/
+
+/* .animate-fade-in {
+    opacity: 0;
+    will-change: opacity;
+} */
+
+.animate-fade-in.is-visible {
+    animation: fade-in .7s .25s ease-in-out forwards;
+    -webkit-animation: fade-in .7s .25s ease-in-out forwards;
+    opacity: 0;
+    transform: none;
+}
+
+.down-triangle {
+    animation: fade-slide-up 1s 1.4s ease-in-out forwards,
+    pulse 3s 3s ease-out infinite;
+    opacity: 0;
+    -webkit-animation: fade-slide-up 1s 1.4s ease-in-out forwards,
+    pulse 3s 3s ease-out infinite;
+}
+
+
+.animate-pop-in {
+    animation: no-transform .6s ease-in-out forwards;
+    transform: translateY(-4rem) scale(.2);
+    -webkit-animation: no-transform .6s ease-out forwards;
+    opacity: 0;
+    transform: translateY(-4rem) scale(.2);
+}
+/* .logo-center {
+    animation-delay: .6s;
+    -webkit-animation-delay: .6s;
+} */
+
+.name-flex {
+    animation-delay: .7s;
+    -webkit-animation-delay: .7s;
+}
+
+#summary img[alt="SOZO Logo"] {
+    animation-delay: .4s;
+    -webkit-animation-delay: .4s;
+}
+
+#landingPage h3 {
+    animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+}
+
+@keyframes no-transform {
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@-webkit-keyframes no-transform {
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+
+}
+
+@-webkit-keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+
+}
+
+
+@keyframes pulse {
+    0% {
+        opacity: 1;
+        transform: none;
+    }
+    50% {
+        opacity: .8;
+        transform: scale(.8);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        opacity: 1;
+        transform: none;
+    }
+    50% {
+        opacity: .8;
+        transform: scale(.8);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes fade-slide-up {
+    0% {
+        opacity: 0;
+        transform: translateY(4rem);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@-webkit-keyframes fade-slide-up {
+    0% {
+        opacity: 0;
+        transform: translateY(4rem);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+
+@-webkit-keyframes fade-horizontal {
+    25% {
+        opacity: 0;
+        transform: translateX(-200rem);
+    }
+
+    50% {
+        opacity: .5;
+        transform: translateX(0rem);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(100rem);
+    }
+
+}
+
+@keyframes fade-horizontal {
+    25% {
+        opacity: 0;
+        transform: translateX(-200rem);
+    }
+
+    50% {
+        opacity: .5;
+        transform: translateX(0rem);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(100rem);
+    }
+
+}
+
+@-webkit-keyframes fade-vertical {
+    0% {
+        opacity: 0;
+        transform: translateY(-200rem);
+    }
+
+    50% {
+        opacity: .7;
+        transform: translateY(0rem);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(100rem);
+    }
+
+}
+
+@keyframes fade-vertical {
+    0% {
+        opacity: 0;
+        transform: translateY(-200rem);
+    }
+
+    50% {
+        opacity: .7;
+        transform: translateY(0rem);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(100rem);
+    }
+
+}
 
 
 /*----------------Media Queries -------------------*/
+
+@media screen and (max-width: 350px) {
+
+    .lastName {
+        font-size: 2.8rem;
+        letter-spacing: 1rem;
+        margin-right: -1rem;
+    }
+
+}
+
 
 @media screen and (min-width: 600px) {
     /*----------  Nav  --------------*/
@@ -984,8 +1264,17 @@ section#awards {
         display: flex;
     }
 
+    .site-nav ul li {
+        display: block;
+        border-top: .1rem solid rgba(217,159,34,1);
+        border-image-source: linear-gradient(-90deg,  #FFF2D3 0%, rgba(217,159,34,.7) 82%, rgba(17,14,11,.1) 100%);
+        border-image-slice: 1;
+        padding: 3rem 3%;
+     }
+
     #mainNav ul li {
         border-top: none;
+        border-image-source: none;
         margin-left: 2rem;
         padding: 0;
     }
@@ -1054,6 +1343,8 @@ section#awards {
 }
 
 @media screen and (min-width: 858px) {
+    /*----------  Needed for Case Study Nav !!!!! --------------*/
+
     .site-nav label, .hamburger {
         display: none;
     }
@@ -1065,6 +1356,7 @@ section#awards {
 
     .site-nav ul li {
         border-top: none;
+        border-image-source: none;
         margin-left: 2rem;
         padding: 0;
     }
@@ -1072,4 +1364,42 @@ section#awards {
     .site-nav ul li:last-of-type {
         padding-right: 0;
     }
+
+    #summary .design-roles {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+        padding: 5rem;
+        max-width: 120rem;
+    }
+
+    #summary .design-roles h4 {
+        border-bottom: 0;
+        margin-top: 0;
+    }
+
+    #summary .design-roles ul{
+        /* border-right: 1rem solid red; */
+        /* padding-right: 2%; */
+    }
+
+
+    .ul-split {
+        border-left: .2rem solid rgba(220, 220, 222, 0.6);
+        border-right: .2rem solid rgba(220, 220, 222, 0.6);
+        display: flex;
+        justify-content: center;
+        padding: 0 8rem;
+    }
+
+    .list-split {
+        margin-top: 5rem;
+        margin-left: 5rem;
+    }
+
+    .list-split li {
+        line-height: 1.32;
+    }
+
+
 }

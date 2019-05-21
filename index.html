@@ -7,6 +7,8 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
         <link rel="stylesheet" href="styles/reset.css">
         <link rel="stylesheet" href="styles/main.css">
+        <script src="scripts/animations.js" defer></script>
+        <script src="scripts/scroll.js" defer></script>
     </head>
 
     <body>
@@ -40,24 +42,27 @@
 
                     <div class="grid-inset">
                         <header>
-                            <img src="images/main/bw_main_logo.png" alt="bw main logo">
 
-                            <div class="name-flex">
+                            <img src="images/main/bw_main_logo_animate.gif" alt="bw main logo" class="logo-center">
+
+                            <div class="name-flex animate-pop-in">
                                 <h1><span class="firstName">Brian</span>
-                                    Warchesik</h1>
+                                    <span class="lastName">Warchesik</span></h1>
                             </div>
 
-                                <h3>I’m a User Experience Designer in the greater  Denver area that loves to code.</h3>
+                                <h3 class="animate-pop-in">I’m a User Experience Designer in the greater  Denver area that loves to code.</h3>
                             </header>
-                            <p>Thanks for checking out my work. Feel free to contact me me at <a href="https://www.linkedin.com/in/brianwarchesik/" target="_blank" title="LinkedIn">LinkedIn</a>, download my <a href="https://drive.google.com/file/d/1kdeu2df695l5dtgCmRaH4XNe94WC2E88/view?usp=sharing" target="_blank">resume</a>, or set up a <a href="contact.html" title="Contact Form">meeting</a> through email.</p>
+                            <p class="animate-pop-in">Thanks for checking out my work. Feel free to contact me me at <a href="https://www.linkedin.com/in/brianwarchesik/" target="_blank" title="LinkedIn">LinkedIn</a>, download my <a href="https://drive.google.com/file/d/1kdeu2df695l5dtgCmRaH4XNe94WC2E88/view?usp=sharing" target="_blank">resume</a>, or set up a <a href="contact.html" title="Contact Form">meeting</a> through email.</p>
 
-                            <img src="images/main/diamond.svg" alt="diamond">
-                            <h4>Featured Projects</h4>
+                            <img src="images/main/diamond.svg" alt="diamond" class="animate-pop-in">
+                            <h4 class="animate-pop-in">Featured Projects</h4>
                             <img src="images/main/flare_left.svg" alt="flare left">
                             <img src="images/main/flare_right.svg" alt="flare right">
-                            <a href="#projectOne" title="See Projects">
-                                <img src="images/main/down_triangle.png" alt="down triangle">
-                            </a>
+                            <div class="down-triangle">
+                                <a href="#projectOne" title="See Projects">
+                                    <img src="images/main/down_triangle.png" alt="down triangle" class="animate-pop-in">
+                                </a>
+                            </div>
                         </div>
 
                     </section>

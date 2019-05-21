@@ -7,6 +7,8 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
         <link rel="stylesheet" href="styles/reset.css">
         <link rel="stylesheet" href="styles/main.css">
+        <script src="scripts/animations.js" defer></script>
+        <script src="scripts/scroll.js" defer></script>
     </head>
     <body>
 
@@ -22,11 +24,11 @@
                 <input type="checkbox" id="hamburger"/>
 
                 <ul class="list-only">
-                    <li><a href="#overview">Overview</a></li>
-                    <li><a href="#discovery">Discovery</a></li>
-                    <li><a href="#informationArchitecture">Information Architecture</a></li>
-                    <li><a href="#branding">Branding</a></li>
-                    <li><a href="#visualDesign">Visual Design</a></li>
+                    <li><a href="#overviewTarget">Overview</a></li>
+                    <li><a href="#discoveryTarget">Discovery</a></li>
+                    <li><a href="#iaTarget">Information Architecture</a></li>
+                    <li><a href="#brandingTarget">Branding</a></li>
+                    <li><a href="#visualDesignTarget">Visual Design</a></li>
                 </ul>
             </div>
 
@@ -34,11 +36,13 @@
 
             <main class="container">
 
+                <div id="summaryTarget" class="nav-target"></div>
+
                 <section id="summary" class="main-section intro grid-container">
-                    <div class="grid-inset">
+                    <div class="grid-inset-full">
                         <div>
-                            <img src="images/sozo_images/sozo_logo_main_4c_reversed_tagline.png" alt="SOZO logo">
-                            <img src="images/sozo_images/sozo_desktop_mobile1.png" alt="SOZO desktop and mobile image" class="hero">
+                            <img src="images/sozo_images/sozo_logo_main_4c_reversed_tagline.png" alt="SOZO Logo" class="animate-pop-in">
+                            <img src="images/sozo_images/sozo_desktop_mobile1.png" alt="SOZO desktop and mobile image" class="hero animate-pop-in">
                         </div>
 
                         <h1 class="section-header headings-reverse">Summary</h1>
@@ -58,19 +62,24 @@
                                 <li>Branding &amp; Identity</li>
                             </ul>
 
-                            <ul class="list-only list-reverse">
-                                <li><h4>Deliverables</h4></li>
-                                <li>Competitive Analysis</li>
-                                <li>User Surveys</li>
-                                <li>User Personas</li>
-                                <li>User Stories &amp; Flows</li>
-                                <li>Paper Mockups</li>
-                                <li>Wireframes</li>
-                                <li>Usability Testing</li>
-                                <li>Logos &amp; Style Guide</li>
-                                <li>High Fi Mockups</li>
-                                <li>Clickable Prototypes</li>
-                            </ul>
+                            <div class="ul-split">
+                                <ul class="list-only list-reverse">
+                                    <li><h4>Deliverables</h4></li>
+                                    <li>Competitive Analysis</li>
+                                    <li>User Surveys</li>
+                                    <li>User Personas</li>
+                                    <li>User Stories &amp; Flows</li>
+                                    <li>Paper Mockups</li>
+                                </ul>
+
+                                <ul class="list-only list-reverse list-split">
+                                    <li>Wireframes</li>
+                                    <li>Usability Testing</li>
+                                    <li>Logos &amp; Style Guide</li>
+                                    <li>High Fi Mockups</li>
+                                    <li>Clickable Prototypes</li>
+                                </ul>
+                            </div>
 
                             <ul class="list-only list-reverse">
                                 <li><h4>Tools</h4></li>
@@ -81,10 +90,12 @@
                                 <li>Maze</li>
                             </ul>
                         </div>
+
+                        <div id="overviewTarget" class="nav-target"></div>
                     </div>
                 </section>
 
-                <section id="overview" class="main-section grid-inset-full">
+                <section id="overview" class="main-section grid-inset-full show-on-scroll animate-fade-in">
                     <h1 class="section-header">Overview</h1>
 
                     <div class="overview-container">
@@ -138,13 +149,15 @@
                         </div>
                     </div>
 
-                    <p>While most people use cloud storage, many users are incorporating multiple platforms for different purposes. Protecting data, knowing where data is located and customizing organization is essential.</p>
+                    <p>While most people use cloud storage, many users are incorporating multiple platforms for different purposes. Protecting data, knowing where data is located, and customizing organization is essential.</p>
 
                     <p class="p-secondary">While competitive analysis and user research revealed a myriad of frustrations for users of current cloud applications the main pain points are listed above.</p>
 
+                    <div id="discoveryTarget" class="nav-target"></div>
+
                 </section>
 
-                <section id="discovery" class="main-section grid-container">
+                <section id="discovery" class="main-section grid-container show-on-scroll animate-fade-in">
                     <h1 class="section-header">Discovery</h1>
 
 
@@ -315,10 +328,13 @@
                                 <a href="https://drive.google.com/file/d/1ep1qqHG7-P039a4FAc5e-AfX-0VXwKxH/view?usp=sharing" target="_blank">See Full Personas <img src="images/main/button_triangle.svg" alt="tiangle"></a>
                             </div>
 
+                            <div id="iaTarget" class="nav-target"></div>
+
                     </section>
                 </section>
 
-                <section id="informationArchitecture" class="main-section grid-container">
+
+                <section id="informationArchitecture" class="main-section grid-container show-on-scroll animate-fade-in">
                     <h1 class="section-header">Information Architecture</h1>
 
 
@@ -419,10 +435,12 @@
                                 <p class="captions"><strong>Problamatic Areas |</strong> Highlighted Above</p>
                             </div>
 
+                            <div id="brandingTarget" class="nav-target"></div>
+
                     </section>
                 </section>
 
-                <section id="branding" class="main-section grid-container">
+                <section id="branding" class="main-section grid-container show-on-scroll animate-fade-in">
                     <h1 class="section-header">Branding</h1>
 
                         <div class="grid-inset-none">
@@ -507,9 +525,12 @@
                             </div>
 
                         </section>
+
+                        <div id="visualDesignTarget" class="nav-target"></div>
+
                     </section>
 
-                    <section id="visualDesign" class="main-section grid-container">
+                    <section id="visualDesign" class="main-section grid-container show-on-scroll animate-fade-in">
                         <h1 class="section-header">Visual Design</h1>
 
 
@@ -641,18 +662,20 @@
                     <section id="finalDesign" class="main-section grid-container">
                         <h1 class="section-header headings-reverse">Final Design</h1>
 
+                        <!-- class="show-on-scroll animate-fade-in" -->
+
                             <div class="img-layout grid-inset-none">
                                 <div class="final-images inset-padding">
-                                    <img src="images/sozo_images/final_designs/landing_page_top.png" alt="landing page">
-                                    <img src="images/sozo_images/final_designs/features_sync.png" alt="features">
-                                    <img src="images/sozo_images/final_designs/dashboard_view_list.png" alt="list view">
-                                    <img src="images/sozo_images/final_designs/acount_settings_modal.png" alt="account modal">
-                                    <img src="images/sozo_images/final_designs/new_folder_modal.png" alt="new folder modal">
-                                    <img src="images/sozo_images/final_designs/dashboard_view_grid.png" alt="dashboard grid view">
-                                    <img src="images/sozo_images/final_designs/moblie_home.png" alt="mobile home">
-                                    <img src="images/sozo_images/final_designs/mobile_plans.png" alt="mobile plans">
-                                    <img src="images/sozo_images/final_designs/mobile_dasboard.png" alt="mobile dashboard">
-                                    <img src="images/sozo_images/final_designs/testimonials.png" alt="testimonials">
+                                    <img src="images/sozo_images/final_designs/landing_page_top.png" alt="landing page" class="show-on-scroll animate-fade-in">
+                                    <img src="images/sozo_images/final_designs/features_sync.png" alt="features" class="show-on-scroll animate-fade-in">
+                                    <img src="images/sozo_images/final_designs/dashboard_view_list.png" alt="list view" class="show-on-scroll animate-fade-in">
+                                    <img src="images/sozo_images/final_designs/acount_settings_modal.png" alt="account modal" class="show-on-scroll animate-fade-in">
+                                    <img src="images/sozo_images/final_designs/new_folder_modal.png" alt="new folder modal" class="show-on-scroll animate-fade-in">
+                                    <img src="images/sozo_images/final_designs/dashboard_view_grid.png" alt="dashboard grid view" class="show-on-scroll animate-fade-in">
+                                    <img src="images/sozo_images/final_designs/moblie_home.png" alt="mobile home" class="show-on-scroll animate-fade-in">
+                                    <img src="images/sozo_images/final_designs/mobile_plans.png" alt="mobile plans" class="show-on-scroll animate-fade-in">
+                                    <img src="images/sozo_images/final_designs/mobile_dasboard.png" alt="mobile dashboard" class="show-on-scroll animate-fade-in">
+                                    <img src="images/sozo_images/final_designs/testimonials.png" alt="testimonials" class="show-on-scroll animate-fade-in">
                                 </div>
 
                                 <!-- CTA Button -->
@@ -690,7 +713,7 @@
                                     <p>While the features within the MVP were addressed in this version, the next round of SOZO would include a full prototype of the mobile version, additional functionality showing the ways a user can customize their files and folders, and solutions to notifications for users sharing data.</p>
 
                                 <div class="back-to-top">
-                                    <a href="#summary" title="Back To Top">
+                                    <a href="#summaryTarget" title="Back To Top">
                                         <img src="images/main/back_to_top.png" alt="back to top button">
                                         <p><strong>Back To Top</strong></p>
                                     </a>
