@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Portfolio | Brian Warchesik</title>
         <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+        <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
         <link rel="stylesheet" href="styles/reset.css">
         <link rel="stylesheet" href="styles/main.css">
         <script src="scripts/animations.js" defer></script>
@@ -13,92 +14,101 @@
 
     <body>
 
-            <nav id="mainNav" class="site-nav">
-                <div class="logo">
-                    <a href="index.html" title="Home">
-                        <img src="images/main/bw_logo_reversed.svg" alt="bw logo reversed">
-                        <span>Brian&nbsp;Warchesik</span>
-                    </a>
-                </div>
+        <nav id="mainNav" class="site-nav">
+            <div class="logo">
+                <a href="index.html" title="Home">
+                    <img src="images/main/bw_logo_reversed.svg" alt="bw logo reversed">
+                    <span>Brian&nbsp;Warchesik</span>
+                </a>
+            </div>
+            
+            <div class="nav-right">
+                <label for="hamburger">&#9776;</label>
+                <input type="checkbox" id="hamburger"/>
 
-                <div class="nav-right">
-                    <label for="hamburger">&#9776;</label>
-                    <input type="checkbox" id="hamburger"/>
+                <ul class="list-only">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="https://drive.google.com/file/d/1kdeu2df695l5dtgCmRaH4XNe94WC2E88/view?usp=sharing" target="_blank">Resume</a></li>
+                    <li><a href="mailto:fake@fakeemail.com">Contact</a></li>
+                </ul>
+            </div>
 
-                    <ul class="list-only">
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="https://drive.google.com/file/d/1kdeu2df695l5dtgCmRaH4XNe94WC2E88/view?usp=sharing" target="_blank">Resume</a></li>
-                        <li><a href="comtact.html">Contact</a></li>
-                    </ul>
-                </div>
+        </nav>
 
-            </nav>
+        <div class="light-over"></div>
 
-            <div class="light-over"></div>
+        <main class="container">
 
-            <main class="container">
+            <section id=landingPage class="landing">
 
-                <section id=landingPage class="landing">
+                <div class="grid-inset">
 
-                    <div class="grid-inset">
-                        <header>
 
-                            <img src="images/main/bw_main_logo_animate.gif" alt="bw main logo" class="logo-center">
+                    <img src="images/main/bw_main_logo_animate.gif" alt="bw main logo" class="logo-center">
 
-                            <div class="name-flex animate-pop-in">
-                                <h1><span class="firstName">Brian</span>
-                                    <span class="lastName">Warchesik</span></h1>
-                            </div>
-
-                                <h3 class="animate-pop-in">I’m a User Experience Designer in the greater  Denver area that loves to code.</h3>
-                            </header>
-                            <p class="animate-pop-in">Thanks for checking out my work. Feel free to contact me me at <a href="https://www.linkedin.com/in/brianwarchesik/" target="_blank" title="LinkedIn">LinkedIn</a>, download my <a href="https://drive.google.com/file/d/1kdeu2df695l5dtgCmRaH4XNe94WC2E88/view?usp=sharing" target="_blank">resume</a>, or set up a <a href="contact.html" title="Contact Form">meeting</a> through email.</p>
-
-                            <img src="images/main/diamond.svg" alt="diamond" class="animate-pop-in">
-                            <h4 class="animate-pop-in">Featured Projects</h4>
-                            <img src="images/main/flare_left.svg" alt="flare left">
-                            <img src="images/main/flare_right.svg" alt="flare right">
-                            <div class="down-triangle">
-                                <a href="#projectOne" title="See Projects">
-                                    <img src="images/main/down_triangle.png" alt="down triangle" class="animate-pop-in">
-                                </a>
-                            </div>
+                    <div class="name-flex animate-pop-in">
+                        <h1><span class="firstName">Brian</span>
+                            <span class="lastName">Warchesik</span></h1>
                         </div>
 
-                    </section>
+                        <h3 class="animate-pop-in">I’m a User Experience Designer in the greater  Denver area that loves to code.</h3>
 
-                    <section id="projectOne" class="project project-one grid-container">
-                        <div class="grid-inset">
+                        <p class="animate-pop-in">Thanks for checking out my work. Feel free to contact me me at <a href="https://www.linkedin.com/in/brianwarchesik/" target="_blank" title="LinkedIn Site">LinkedIn</a>, download my <a href="https://drive.google.com/file/d/1kdeu2df695l5dtgCmRaH4XNe94WC2E88/view?usp=sharing" target="_blank">resume</a>, or set up a <a href="contact.html" title="Contact Form">meeting</a> through email.</p>
 
-                            <header>
-                                <div>
+                        <img src="images/main/diamond.svg" alt="diamond" class="animate-pop-in">
+                        <div class="featured">
+                            <img src="images/main/flare_left.svg" alt="flare left">
+                            <h4 class="animate-pop-in">Featured&nbsp;Projects</h4>
+                            <img src="images/main/flare_right.svg" alt="flare right">
+                        </div>
+                        <div class="down-triangle">
+                            <a href="#projectOne" title="See Projects">
+                                <img src="images/main/down_triangle.png" alt="down triangle" class="animate-pop-in">
+                            </a>
+                        </div>
+                    </div>
 
-                                    <img src="images/sozo_images/sozo_desktop_mobile1.png" alt="SOZO desktop and mobile image" class="hero">
+                </section>
 
-                                </div>
-                                <h4 class="roles">UX &amp; Visual Design | Branding</h4>
-                                <h2><span class="bold">SOZO </span><span class="light">Cloud Storage</span></h2>
-                            </header>
-                            <p>SOZO is an advanced cloud storage application that has the ability to sync to other cloud storage platforms. SOZO lets users securely store, create &amp; share files in an environment tailored by them.</p>
-                            <!-- CTA Button -->
-                            <div class= "cta-button">
+                <section id="projectOne" class="project project-one grid-container">
+
+                    <div class="grid-inset-one">
+
+                        <img src="images/sozo_images/sozo_desktop_mobile1.png" alt="Sozo Project Desktop and Mobile" class="hero">
+
+                    </div>
+
+                    <div class="grid-inset-typography">
+                        <h4 class="roles">UX &amp; Visual Design | Branding</h4>
+                        <h2><span class="bold">SOZO </span><span class="light">Cloud Storage</span></h2>
+
+                        <p>SOZO is an advanced cloud storage application that has the ability to sync to other cloud storage platforms. SOZO lets users securely store, create &amp; share files in an environment tailored by them.</p>
+
+
+                        <!-- CTA Button -->
+                        <div class="grid-cant-touch grid-inset-one">
+                            <div class="cta-button">
                                 <a href="sozo_case_study.html">Case Study<img src="images/main/button_triangle.svg" alt="triangle"></a>
                             </div>
                         </div>
 
-                    </section>
-                </main>
+                    </div>
 
-                <footer class="main-footer">
-                    <h6>Get In Touch</h6>
-                    <p>&copy;2019 Designed and Developed by Brian Warchesik</p>
-                    <ul class="list-only">
-                        <li><a href="index.html" title="Home"><img src="images/main/bw_logo_reversed.svg" alt="bw logo reversed"></a></li>
-                        <!-- <li><a href="https://drive.google.com/file/d/1kdeu2df695l5dtgCmRaH4XNe94WC2E88/view?usp=sharing" target="_blank">Resume</a></li> -->
-                        <li><a href="https://www.linkedin.com/in/brianwarchesik/" target="_blank" title="LinkedIn"><img src="images/main/linked_in.svg" alt="linked in"></a></li>
-                        <li><a href="contact.html" title="Contact Form"><img src="images/main/email.svg" alt="email contact"></a></li>
-                    </ul>
-                </footer>
+
+
+                </section>
+            </main>
+
+            <footer class="main-footer">
+                <h6>Get In Touch</h6>
+                <p>&copy;2019 Designed and Developed by Brian Warchesik</p>
+                <ul class="list-only">
+                    <li><a href="index.html" title="Home"><img src="images/main/bw_logo_reversed.svg" alt="bw logo reversed"></a></li>
+                    <!-- <li><a href="https://drive.google.com/file/d/1kdeu2df695l5dtgCmRaH4XNe94WC2E88/view?usp=sharing" target="_blank">Resume</a></li> -->
+                    <li><a href="https://www.linkedin.com/in/brianwarchesik/" target="_blank" title="LinkedIn"><img src="images/main/linked_in.svg" alt="linked in"></a></li>
+                    <li><a href="mailto:fake@fakeemail.com" title="Contact Form"><img src="images/main/email.svg" alt="email contact"></a></li>
+                </ul>
+            </footer>
 
         </body>
 </html>
