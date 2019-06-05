@@ -377,16 +377,16 @@ footer p {
 }
 
 
-.main-footer h6 {
-    color: #E0E3E8;
-    font-weight: 900;
-    font-size: 2.9rem;
-}
-
 .main-footer p {
     color: #E0E3E8;
     font-size: 1.3rem;
     margin: .75rem 0 1rem 0;
+}
+
+.main-footer p:nth-of-type(1) {
+    color: #E0E3E8;
+    font-weight: 900;
+    font-size: 2.9rem;
 }
 
 .main-footer img[alt="bw logo reversed"] {
@@ -490,7 +490,7 @@ footer p {
     font-size: 2rem;
 }
 
-.callout-block-bottom h6 {
+.callout-block-bottom li p:nth-of-type(1) {
     font-weight: 900;
 }
 
@@ -521,9 +521,10 @@ footer p {
     width: auto;
 }
 
-.callout-block-top h4 {
+.callout-block-top p {
     color: #F5F0EA;
     font-size: 2.8rem;
+    margin-top: 0;
 }
 
 .no-margin {
@@ -534,8 +535,10 @@ footer p {
     margin-top: 4rem;
 }
 
-.pref-top h4 {
+.pref-top h3 {
+    color: #5E667A;
     font-weight: 700;
+    font-size: 2rem;
 }
 
 .drop-shadow {
@@ -623,15 +626,6 @@ footer p {
     color: rgb(176, 201, 246);
 }
 
-.landing h3 {
-    color: #D7DFEC;
-    font-size: 2.4rem;
-    font-weight: 300;
-    line-height: 3rem;
-    text-align: center;
-    max-width: 90%;
-    margin: 0 auto 5rem auto;
-}
 
 .landing p {
     margin: 0 auto;
@@ -642,6 +636,16 @@ footer p {
     text-align: center;
     max-width: 80%;
     z-index: 3;
+}
+
+.landing .sub-head {
+    color: #D7DFEC;
+    font-size: 2.4rem;
+    font-weight: 300;
+    line-height: 3rem;
+    text-align: center;
+    max-width: 90%;
+    margin: 0 auto 5rem auto;
 }
 
 
@@ -677,7 +681,7 @@ footer p {
     text-transform: uppercase;
 }
 
-.landing h4 {
+.landing h2 {
     color: #BEAE99;
     font-size: 2rem;
     font-weight: 300;
@@ -815,7 +819,7 @@ img[alt="flare left"], [alt="flare right"] {
     padding-bottom: 2rem;
 }
 
-.percentages h4 {
+.percentages h3 {
     color: #796F63;
     font-size: 2.8rem;
     font-weight: 700;
@@ -860,7 +864,7 @@ img[alt="flare left"], [alt="flare right"] {
     margin-top: 5rem;
 }
 
-.pref-top h4 {
+.pref-top h3 {
     margin-top: 2rem;
 }
 
@@ -1000,7 +1004,8 @@ img[alt="flare left"], [alt="flare right"] {
     line-height: normal;
 }
 
-.about blockquote h4 {
+.about blockquote p {
+    color: #5E667A;
     font-size: 2.3rem;
     font-weight: 900;
 }
@@ -1036,15 +1041,16 @@ blockquote h4 {
     justify-content: center;
 }
 
-#awards h4 {
+#awards h3 {
     font-size: 2.4rem;
     letter-spacing: .2rem;
     padding: .5rem 0;
     text-align: center;
+    color: #F7F7F7;
     /* margin: 0 auto; */
 }
 
-#awards h6 {
+#awards h4 {
     font-size: 2.4rem;
     font-weight: 700;
 }
@@ -1058,11 +1064,13 @@ blockquote h4 {
 }
 
 #awards li p:nth-of-type(1) {
-    line-height: 2rem;
+    line-height: 1.25;
+    font-size: 1.8rem;
+
 }
 
 #awards li p:nth-of-type(2) {
-    color: #5E667A;
+    color: #424651;
     font-size: 1.6rem;
     margin-top: 1rem;
 }
@@ -1099,22 +1107,19 @@ blockquote h4 {
     opacity: 0;
     transform: translateY(-4rem) scale(.2);
 }
-/* .logo-center {
-    animation-delay: .6s;
-    -webkit-animation-delay: .6s;
-} */
+
 
 .name-flex {
     animation-delay: .7s;
     -webkit-animation-delay: .7s;
 }
 
-#summary img[alt="SOZO Logo"] {
+#summary img[alt="SOZO Logo"], .about h2 {
     animation-delay: .4s;
     -webkit-animation-delay: .4s;
 }
 
-#landingPage h3 {
+#landingPage .sub-head {
     animation-delay: 1s;
     -webkit-animation-delay: 1s;
 }
@@ -1444,8 +1449,6 @@ blockquote h4 {
 
 
 
-
-
 @media screen and (min-width: 1000px) {
 
     /*---------------- Landing Page -------------------*/
@@ -1475,7 +1478,7 @@ blockquote h4 {
         letter-spacing: .772rem;
     }
 
-    .landing h3 {
+    .landing .sub-head {
         font-size: 4rem;
         line-height: 5rem;
         max-width: 79rem;
@@ -1490,7 +1493,7 @@ blockquote h4 {
         max-width: 55.5rem;
     }
 
-    .landing h4 {
+    .landing h2 {
         font-size: 3.2rem;
         font-weight: 300;
         letter-spacing: .41rem;
@@ -1654,6 +1657,7 @@ blockquote h4 {
         font-size: 3rem;
     }
 
+
     p {
         font-size: 2.4rem;
         line-height: 1.5;
@@ -1697,7 +1701,7 @@ blockquote h4 {
         margin-bottom: 3rem;
     }
 
-    .intro h4 {
+    .intro h3 {
         margin-top: 1rem;
     }
 
@@ -1717,12 +1721,13 @@ blockquote h4 {
         padding-bottom: 2rem;
     }
 
-    .percentages h4 {
+    .percentages h3 {
         font-size: 4rem;
     }
 
-    .pref-top h4 {
+    .pref-top h3 {
         margin-top: 5rem;
+        font-size: 3rem;
     }
 
     .pref-top p {
