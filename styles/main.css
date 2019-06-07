@@ -759,7 +759,7 @@ img[alt="flare left"], [alt="flare right"] {
 .design-roles {
     background-color: #6A6E78;
     border-radius: .4rem;
-    margin: 8rem;
+    margin: 10%;
     padding: 1rem 10% 4rem 10%;
     text-align: center;
 }
