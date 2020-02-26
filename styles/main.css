@@ -717,7 +717,18 @@ img[alt="flare left"], [alt="flare right"] {
     padding-bottom: 10rem;
 }
 
+.project-two {
+    background: url(../images/packminder_images/hero_background.jpg) no-repeat, linear-gradient(-63deg, #F5F1EB 0%, #EDEDF2 95%);
+    background-size: 100% 30%, contain;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
 .project-one img[alt="Sozo Project Desktop and Mobile"] {
+    margin-top: -5rem;
+}
+
+.project-two img[alt="Packminder Hero Image"] {
     margin-top: -5rem;
 }
 
@@ -1468,6 +1479,11 @@ blockquote h4 {
         margin: 0 auto 2rem auto;
     }
 
+    img[alt="Packminder Hero Image"] {
+        max-width: 85%;
+        margin: 0 auto 2rem auto;
+    }
+
     .grid-inset-typography {
         max-width: 60rem;
         justify-self: center
@@ -1624,6 +1640,12 @@ blockquote h4 {
 
     .project-one {
         background: url(../images/sozo_images/sozo_hero_image.jpg) no-repeat, linear-gradient(-63deg, #F5F1EB 0%, #EDEDF2 95%);
+        background-size: 100% 55%, contain;
+        padding-top: 10%;
+    }
+
+    .project-two {
+        background: url(../images/packminder_images/hero_background.jpg) no-repeat, linear-gradient(-63deg, #F5F1EB 0%, #EDEDF2 95%);
         background-size: 100% 55%, contain;
         padding-top: 10%;
     }
