@@ -35,13 +35,31 @@ ul {
     margin-left: 2rem;
 }
 
+
 li {
     color: #151419;
     font-size: 1.6rem;
     line-height: 1.3;
     list-style-image: url(../images/main/bullet_regular.svg);
-    margin-top: 2rem;
+    margin-top: 3rem;
     padding-left: 1rem;
+}
+
+li ul li {
+    list-style-image: url(../images/main/bullet_round.svg);
+    margin-top: 1.2rem;
+}
+
+.embedded-list ul li {
+    font-weight: 900;
+}
+
+.embedded-list li ul li {
+    font-weight: normal;
+}
+
+.embedded {
+    margin-bottom: 5rem;
 }
 
 li p {
@@ -540,6 +558,11 @@ footer p {
     margin-top: 4rem;
 }
 
+.image-margin-pad {
+    margin-top: 4rem;
+    padding: 0 5rem 0 5rem;
+}
+
 .pref-top h3 {
     color: #5E667A;
     font-weight: 700;
@@ -710,25 +733,24 @@ img[alt="flare left"], [alt="flare right"] {
 
 
 /*---------------- Project Section Layout & Typography -------------------*/
-.project-one {
-    background: url(../images/sozo_images/sozo_hero_image.jpg) no-repeat, linear-gradient(-63deg, #F5F1EB 0%, #EDEDF2 95%);
-    background-size: 100% 30%, contain;
+
+.project {
+    background: linear-gradient(-63deg, #F5F1EB 0%, #EDEDF2 95%);
     padding-top: 10rem;
-    padding-bottom: 10rem;
+    padding-bottom: 8rem;
+}
+
+.project-one {
+    background: url(../images/sozo_images/sozo_hero_image.jpg) no-repeat;
+    background-size: 100% 30%, contain;
 }
 
 .project-two {
-    background: url(../images/packminder_images/hero_background.jpg) no-repeat, linear-gradient(-63deg, #F5F1EB 0%, #EDEDF2 95%);
+    background: url(../images/packminder_images/hero_background.jpg) no-repeat;
     background-size: 100% 30%, contain;
-    padding-top: 10rem;
-    padding-bottom: 10rem;
 }
 
-.project-one img[alt="Sozo Project Desktop and Mobile"] {
-    margin-top: -5rem;
-}
-
-.project-two img[alt="Packminder Hero Image"] {
+.project .hero {
     margin-top: -5rem;
 }
 
@@ -739,8 +761,15 @@ img[alt="flare left"], [alt="flare right"] {
 }
 
 /*---------------- Case Study Page Intro Layout & Typography -------------------*/
-.hero-container {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, .5) 1%, rgba(0, 0, 0, 0) 5%), url(../images/sozo_images/sozo_hero_image.jpg) no-repeat;
+.hero-container-sozo {
+    background: url(../images/sozo_images/sozo_hero_image.jpg) no-repeat;
+    background-size: contain;
+    padding-top: 5%;
+    margin-top: -5rem;
+}
+
+.hero-container-pm {
+    background: url(../images/packminder_images/hero_background.jpg) no-repeat;
     background-size: contain;
     padding-top: 5%;
     margin-top: -5rem;
@@ -751,7 +780,7 @@ img[alt="flare left"], [alt="flare right"] {
     background-size: contain;
 }
 
-.intro img[alt="SOZO Logo"] {
+.intro-logo {
     max-width: 50%;
     margin: 0 auto 2rem auto;
 }
@@ -908,17 +937,29 @@ img[alt="flare left"], [alt="flare right"] {
     margin-top: 0;
 }
 
-#testingRoundTwo p[class="p-secondary"]:last-of-type {
+/* #testingRoundTwo p[class="p-secondary"]:last-of-type {
     margin-top: 8rem;
-}
+} */
 
 .final-logos {
     background: white;
-    padding: 10rem 0 15rem 0;
+    padding: 10rem 0 10rem 0;
 }
 
 .final-logos p {
     margin-top: 2rem;
+}
+
+.tasks, .conclusions {
+    margin-top: 6rem;
+}
+
+.conclusions {
+    margin-bottom: 3rem;
+}
+
+.offset-top {
+   margin-top: 4rem;
 }
 
 /*---------------- Final Images Layout -------------------*/
@@ -932,6 +973,12 @@ img[alt="flare left"], [alt="flare right"] {
     -webkit-box-shadow: 2px 2px 10px 0px rgba(21,20,25,0.57);
     -moz-box-shadow: 2px 2px 10px 0px rgba(21,20,25,0.57);
     box-shadow: 2px 2px 10px 0px rgba(21,20,25,0.57);
+}
+
+#finalDesign .no-shadow {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
 }
 
 .final-images {
@@ -1469,17 +1516,11 @@ blockquote h4 {
 @media screen and (min-width: 830px) {
 
 
-    .intro img[alt="SOZO Logo"] {
-        max-width: 30%;
-        margin: -1% auto 2% auto;
+    .intro-logo {
+        max-width: 32.5%;
     }
 
-     img[alt="Sozo Project Desktop and Mobile"] {
-        max-width: 85%;
-        margin: 0 auto 2rem auto;
-    }
-
-    img[alt="Packminder Hero Image"] {
+     .project .hero {
         max-width: 85%;
         margin: 0 auto 2rem auto;
     }
@@ -1639,15 +1680,15 @@ blockquote h4 {
     }
 
     .project-one {
-        background: url(../images/sozo_images/sozo_hero_image.jpg) no-repeat, linear-gradient(-63deg, #F5F1EB 0%, #EDEDF2 95%);
+        background: url(../images/sozo_images/sozo_hero_image.jpg) no-repeat;
         background-size: 100% 55%, contain;
-        padding-top: 10%;
+        padding-top: 8%;
     }
 
     .project-two {
-        background: url(../images/packminder_images/hero_background.jpg) no-repeat, linear-gradient(-63deg, #F5F1EB 0%, #EDEDF2 95%);
+        background: url(../images/packminder_images/hero_background.jpg) no-repeat;
         background-size: 100% 55%, contain;
-        padding-top: 10%;
+        padding-top: 8%;
     }
 
 
@@ -1741,8 +1782,15 @@ blockquote h4 {
         padding: 5rem 0 10rem 0;
     }
 /* used for sizing top images on case study page */
-    .hero-container {
+    .hero-container-sozo {
         background: url(../images/sozo_images/sozo_hero_image.jpg) no-repeat;
+        background-size: 100% 90%, contain;
+        padding-top: 5%;
+        margin-top: -5rem;
+    }
+
+    .hero-container-pm {
+        background: url(../images/packminder_images/hero_background.jpg) no-repeat;
         background-size: 100% 90%, contain;
         padding-top: 5%;
         margin-top: -5rem;
@@ -1820,6 +1868,10 @@ blockquote h4 {
         font-weight: 700;
         line-height: 2.5rem;
         padding-left: 1.3rem;
+    }
+
+     .offset-top {
+        margin-top: 8rem;
     }
 
     .roles {

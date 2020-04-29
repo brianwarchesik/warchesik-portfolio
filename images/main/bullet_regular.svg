@@ -1,18 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
-    <title>bullet_regular</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Case-Study" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="SOZO-Desktop-Case-Study" transform="translate(-325.000000, -9923.000000)" fill="#5E667A" fill-rule="nonzero">
-            <g id="Information-Architecture" transform="translate(0.000000, 6153.000000)">
-                <g id="Usability-Round1" transform="translate(0.000000, 3446.000000)">
-                    <g id="Testing-Tasks" transform="translate(325.000000, 275.000000)">
-                        <rect id="bullet_regular" x="0" y="49" width="14" height="14"></rect>
-                    </g>
-                </g>
-            </g>
-        </g>
-    </g>
-</svg>
+<svg height="14" viewBox="0 0 14 14" width="14" xmlns="http://www.w3.org/2000/svg"><path d="m0 0h14v14h-14z" fill="#5e667a"/></svg>
