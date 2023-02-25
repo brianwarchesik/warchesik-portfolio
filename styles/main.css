@@ -476,9 +476,9 @@ footer p {
     width: 6rem;
 }
 
-.grid-cant-touch {
-    /* extra div needed so grid doesn't disrupt button layout  */
-}
+/* .grid-cant-touch {
+     extra div needed so grid doesn't disrupt button layout
+} */
 
 /*---------------- Special Overides -------------------*/
 
@@ -1591,10 +1591,10 @@ blockquote h4 {
         grid-column-gap: 5%
     }
 
-    .form-container {
-        /* flex-grow: 1; */
-        /* margin-left: 3rem; */
-    }
+    /* .form-container {
+        flex-grow: 1; */
+        /* margin-left: 3rem;
+    } */
 
     .send-button {
         margin: 3rem 0;
